@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testing", "testing\testing.csproj", "{8C9BAF79-AD64-4502-9044-BA77CCC5361D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4F3DE862-C00D-4624-92DD-146D25A6C965}"
+	ProjectSection(SolutionItems) = preProject
+		testing\mainform - Copy.cs = testing\mainform - Copy.cs
+		testing\mainform.cs = testing\mainform.cs
+		testing\mainform.Designer.cs = testing\mainform.Designer.cs
+		testing\mainform.resx = testing\mainform.resx
+		testing\trainsmanager.cs = testing\trainsmanager.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C9BAF79-AD64-4502-9044-BA77CCC5361D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C9BAF79-AD64-4502-9044-BA77CCC5361D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C9BAF79-AD64-4502-9044-BA77CCC5361D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C9BAF79-AD64-4502-9044-BA77CCC5361D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC2D92CF-C287-4297-AB98-7E4772C8FD04}
+	EndGlobalSection
+EndGlobal
