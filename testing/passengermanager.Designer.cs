@@ -147,11 +147,11 @@
             // 
             // Passengermgrbtn
             // 
-            this.Passengermgrbtn.BackColor = System.Drawing.Color.SteelBlue;
+            this.Passengermgrbtn.BackColor = System.Drawing.Color.Snow;
             this.Passengermgrbtn.FlatAppearance.BorderSize = 0;
             this.Passengermgrbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Passengermgrbtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Passengermgrbtn.ForeColor = System.Drawing.Color.Snow;
+            this.Passengermgrbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.Passengermgrbtn.Location = new System.Drawing.Point(-15, 216);
             this.Passengermgrbtn.Name = "Passengermgrbtn";
             this.Passengermgrbtn.Size = new System.Drawing.Size(149, 29);

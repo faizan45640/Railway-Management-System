@@ -172,11 +172,11 @@
             // 
             // TraingManagerbt
             // 
-            this.TraingManagerbt.BackColor = System.Drawing.Color.SteelBlue;
+            this.TraingManagerbt.BackColor = System.Drawing.Color.Snow;
             this.TraingManagerbt.FlatAppearance.BorderSize = 0;
             this.TraingManagerbt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TraingManagerbt.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TraingManagerbt.ForeColor = System.Drawing.Color.Snow;
+            this.TraingManagerbt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.TraingManagerbt.Location = new System.Drawing.Point(-15, 142);
             this.TraingManagerbt.Name = "TraingManagerbt";
             this.TraingManagerbt.Size = new System.Drawing.Size(149, 23);

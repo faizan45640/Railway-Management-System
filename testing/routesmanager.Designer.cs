@@ -121,11 +121,11 @@
             // 
             // routesmgrbtn
             // 
-            this.routesmgrbtn.BackColor = System.Drawing.Color.SteelBlue;
+            this.routesmgrbtn.BackColor = System.Drawing.Color.Snow;
             this.routesmgrbtn.FlatAppearance.BorderSize = 0;
             this.routesmgrbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.routesmgrbtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.routesmgrbtn.ForeColor = System.Drawing.Color.Snow;
+            this.routesmgrbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.routesmgrbtn.Location = new System.Drawing.Point(-15, 296);
             this.routesmgrbtn.Name = "routesmgrbtn";
             this.routesmgrbtn.Size = new System.Drawing.Size(149, 29);

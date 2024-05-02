@@ -97,11 +97,11 @@
             // 
             // Reservationmgrbt
             // 
-            this.Reservationmgrbt.BackColor = System.Drawing.Color.SteelBlue;
+            this.Reservationmgrbt.BackColor = System.Drawing.Color.White;
             this.Reservationmgrbt.FlatAppearance.BorderSize = 0;
             this.Reservationmgrbt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Reservationmgrbt.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Reservationmgrbt.ForeColor = System.Drawing.Color.Snow;
+            this.Reservationmgrbt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.Reservationmgrbt.Location = new System.Drawing.Point(-15, 388);
             this.Reservationmgrbt.Name = "Reservationmgrbt";
             this.Reservationmgrbt.Size = new System.Drawing.Size(149, 25);
