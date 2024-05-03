@@ -103,5 +103,10 @@ namespace testing
             this.Close();
 
         }
+
+        private void guna2WinProgressIndicator1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
