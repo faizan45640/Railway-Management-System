@@ -178,6 +178,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="userLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userLogin.Designer.cs">
+      <DependentUpon>userLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userSignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userSignup.Designer.cs">
+      <DependentUpon>userSignup.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,6 +222,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="userLogin.resx">
+      <DependentUpon>userLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userSignup.resx">
+      <DependentUpon>userSignup.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -271,6 +289,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2024-05-03_190726920-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

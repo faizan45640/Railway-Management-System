@@ -123,6 +123,16 @@ namespace testing.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image_2024_05_03_190726920_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("image_2024-05-03_190726920-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap railwaymaster {
             get {
                 object obj = ResourceManager.GetObject("railwaymaster", resourceCulture);
