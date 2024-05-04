@@ -91,7 +91,7 @@
             this.guna2GradientTileButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2GradientTileButton1.FillColor = System.Drawing.Color.Transparent;
             this.guna2GradientTileButton1.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2GradientTileButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientTileButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.guna2GradientTileButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientTileButton1.HoverState.FillColor = System.Drawing.Color.White;
             this.guna2GradientTileButton1.HoverState.FillColor2 = System.Drawing.Color.White;
@@ -100,7 +100,7 @@
             this.guna2GradientTileButton1.Name = "guna2GradientTileButton1";
             this.guna2GradientTileButton1.Size = new System.Drawing.Size(148, 26);
             this.guna2GradientTileButton1.TabIndex = 14;
-            this.guna2GradientTileButton1.Text = "Passengers Manager";
+            this.guna2GradientTileButton1.Text = "Log Out";
             this.guna2GradientTileButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientTileButton1.Click += new System.EventHandler(this.guna2GradientTileButton1_Click);
             // 

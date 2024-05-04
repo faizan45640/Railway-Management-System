@@ -77,7 +77,7 @@ namespace testing
             SqlConnection conn = new DatabaseConnection().getConnection();
             conn.Open();
             //prepare query
-            string query = "Select Reservation.id AS [T ID], Passenger.username AS [Passenger Name] , Train.name AS [Train Name] , Route.source AS Source , Route.destination AS Destination , Route.date AS Date , Route.cost AS Cost From Reservation INNER JOIN Passenger ON passengerID=Passenger.id INNER JOIN Route ON routeID=Route.id INNER JOIN Train ON Route.trainid=Train.id ";
+            string query = "Select Reservation.id AS [T ID], Passenger.username AS [Passenger Name] , Train.name AS [Train Name] , Route.source AS Source , Route.destination AS Destination , Route.date AS Date,reservation.status AS Status , Route.cost AS Cost From Reservation INNER JOIN Passenger ON passengerID=Passenger.id INNER JOIN Route ON routeID=Route.id INNER JOIN Train ON Route.trainid=Train.id ";
             //prepare command
             SqlCommand cmd = new SqlCommand(query, conn);
             //create adapter
@@ -155,8 +155,8 @@ namespace testing
         private void CancellationMGRBtn_Click(object sender, EventArgs e)
         {
             //open cancellation manager form
-            //CancellationManager cm = new CancellationManager();
-            //cm.Show();
+            CancellationManager cm = new CancellationManager();
+            cm.Show();
             this.Close();
 
         }
@@ -164,8 +164,8 @@ namespace testing
         private void CancellationMGRPic_Click(object sender, EventArgs e)
         {
             //open cancellation manager form
-            //CancellationManager cm = new CancellationManager();
-            //cm.Show();
+            CancellationManager cm = new CancellationManager();
+            cm.Show();
             this.Close();
 
         }
@@ -224,6 +224,11 @@ namespace testing
         {
             //add reservation
             //connect to database
+            if(passengeridcombo.SelectedValue == null || routeidcombo.SelectedValue == null)
+            {
+                MessageBox.Show("Please select a passenger and a route");
+                return;
+            }
             SqlConnection conn = new DatabaseConnection().getConnection();
             //open connection
             conn.Open();
@@ -233,7 +238,7 @@ namespace testing
             int passengerid = int.Parse(p);
             int routeid = int.Parse(r);
             //check if the passenger has already book his ticket
-            string query1 = "SELECT * FROM Reservation WHERE passengerID = '" + passengerid + "' AND routeID = '" + routeid + "'";
+            string query1 = "SELECT * FROM Reservation WHERE passengerID = '" + passengerid + "' AND routeID = '" + routeid + "' AND status='Active'";
             SqlCommand cmd1 = new SqlCommand(query1, conn); 
             SqlDataReader reader = cmd1.ExecuteReader();
             if (reader.Read())
@@ -243,9 +248,10 @@ namespace testing
             }
             conn.Close();
             conn.Open();
+            string status="Active";
 
 
-            string query = "INSERT INTO Reservation (passengerID,routeID) VALUES ('" + passengerid + "','" + routeid + "')";
+            string query = "INSERT INTO Reservation (passengerID,routeID,status) VALUES ('" + passengerid + "','" + routeid + "' , '"+status+"')";
             //prepare command
             SqlCommand cmd = new SqlCommand(query, conn);
             //execute command

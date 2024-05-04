@@ -134,8 +134,8 @@ namespace testing
         private void CancellationMGRBtn_Click(object sender, EventArgs e)
         {
             //open cancellation manager form
-            //CancellationManager cm = new CancellationManager();
-            //cm.Show();
+            CancellationManager cm = new CancellationManager();
+            cm.Show();
             this.Close();
 
         }
@@ -227,6 +227,11 @@ namespace testing
 
         private void addRoueBTN_Click(object sender, EventArgs e)
         {
+            if( TrainIDcombo==null || sourcecombo==null || destinationCombo==null || guna2DateTimePicker1==null || CostTXT==null)
+            {
+                MessageBox.Show("Please fill all the fields");
+                return;
+            }
             Populate();
             FilltrainID();
             //connect to database

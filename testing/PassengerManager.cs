@@ -101,8 +101,8 @@ namespace testing
         private void CancellationMGRBtn_Click(object sender, EventArgs e)
         {
             //open cancellation manager form
-            //CancellationManager cm = new CancellationManager();
-            //cm.Show();
+            CancellationManager cm = new CancellationManager();
+            cm.Show();
             this.Close();
 
         }
@@ -110,8 +110,8 @@ namespace testing
         private void CancellationMGRPic_Click(object sender, EventArgs e)
         {
             //open cancellation manager form
-            //CancellationManager cm = new CancellationManager();
-            //cm.Show();
+            CancellationManager cm = new CancellationManager();
+            cm.Show();
             this.Close();
 
         }

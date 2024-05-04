@@ -141,6 +141,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CancellationManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancellationManager.Designer.cs">
+      <DependentUpon>CancellationManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="TicketsManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +192,9 @@
     <Compile Include="userSignup.Designer.cs">
       <DependentUpon>userSignup.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CancellationManager.resx">
+      <DependentUpon>CancellationManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TicketsManager.resx">
       <DependentUpon>TicketsManager.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,6 +303,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\blue ticket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue cancellation.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
