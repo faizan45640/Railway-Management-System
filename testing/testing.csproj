@@ -141,6 +141,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TicketsManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketsManager.Designer.cs">
+      <DependentUpon>TicketsManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="RoutesManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,9 @@
     <Compile Include="userSignup.Designer.cs">
       <DependentUpon>userSignup.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TicketsManager.resx">
+      <DependentUpon>TicketsManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RoutesManager.resx">
       <DependentUpon>RoutesManager.cs</DependentUpon>
     </EmbeddedResource>
@@ -279,6 +288,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bluePassenger1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueroutes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue ticket.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

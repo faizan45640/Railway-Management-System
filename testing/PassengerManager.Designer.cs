@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2GradientTileButton1 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.CancellationMGRBtn = new Guna.UI2.WinForms.Guna2GradientTileButton();
@@ -38,14 +38,7 @@
             this.RoutesMGRBtn = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.TrainsMgrBtn = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.ExitBTN = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.CancellationMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.TicketsMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.RoutesMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.TrainsMgrPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PassengerMGRBtn = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.PassengerMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DeletePassengerBTN = new Guna.UI2.WinForms.Guna2GradientTileButton();
@@ -59,7 +52,6 @@
             this.PassengerNaeTX = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PassengerPasswordTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CustomGradientPanel5 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
@@ -67,16 +59,24 @@
             this.guna2CustomGradientPanel6 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.PassengerPhoneTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CustomGradientPanel7 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.PassengerMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.CancellationMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.TicketsMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.RoutesMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.TrainsMgrPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PassengerMGRPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CancellationMGRPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TicketsMGRPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RoutesMGRPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TrainsMgrPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PassengerMGRPic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CustomGradientPanel1
@@ -246,80 +246,6 @@
             this.ExitBTN.Text = "EXIT";
             this.ExitBTN.Click += new System.EventHandler(this.ExitBTN_Click);
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2PictureBox1.Image = global::testing.Properties.Resources.logout_removebg_preview;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 491);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(38, 26);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 13;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // CancellationMGRPic
-            // 
-            this.CancellationMGRPic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CancellationMGRPic.Image = global::testing.Properties.Resources.image_2024_05_01_135359567_removebg_preview;
-            this.CancellationMGRPic.ImageRotate = 0F;
-            this.CancellationMGRPic.Location = new System.Drawing.Point(0, 263);
-            this.CancellationMGRPic.Name = "CancellationMGRPic";
-            this.CancellationMGRPic.Size = new System.Drawing.Size(38, 26);
-            this.CancellationMGRPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CancellationMGRPic.TabIndex = 11;
-            this.CancellationMGRPic.TabStop = false;
-            this.CancellationMGRPic.Click += new System.EventHandler(this.CancellationMGRPic_Click);
-            // 
-            // TicketsMGRPic
-            // 
-            this.TicketsMGRPic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TicketsMGRPic.Image = global::testing.Properties.Resources.image_2024_05_01_134354312_removebg_preview;
-            this.TicketsMGRPic.ImageRotate = 0F;
-            this.TicketsMGRPic.Location = new System.Drawing.Point(0, 231);
-            this.TicketsMGRPic.Name = "TicketsMGRPic";
-            this.TicketsMGRPic.Size = new System.Drawing.Size(38, 26);
-            this.TicketsMGRPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.TicketsMGRPic.TabIndex = 9;
-            this.TicketsMGRPic.TabStop = false;
-            // 
-            // RoutesMGRPic
-            // 
-            this.RoutesMGRPic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RoutesMGRPic.Image = global::testing.Properties.Resources.image_2024_05_01_133125829_removebg_preview;
-            this.RoutesMGRPic.ImageRotate = 0F;
-            this.RoutesMGRPic.Location = new System.Drawing.Point(0, 199);
-            this.RoutesMGRPic.Name = "RoutesMGRPic";
-            this.RoutesMGRPic.Size = new System.Drawing.Size(38, 26);
-            this.RoutesMGRPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.RoutesMGRPic.TabIndex = 7;
-            this.RoutesMGRPic.TabStop = false;
-            this.RoutesMGRPic.Click += new System.EventHandler(this.RoutesMGRPic_Click);
-            // 
-            // TrainsMgrPic
-            // 
-            this.TrainsMgrPic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TrainsMgrPic.Image = global::testing.Properties.Resources.image_2024_05_01_130640974_removebg_preview;
-            this.TrainsMgrPic.ImageRotate = 0F;
-            this.TrainsMgrPic.Location = new System.Drawing.Point(0, 167);
-            this.TrainsMgrPic.Name = "TrainsMgrPic";
-            this.TrainsMgrPic.Size = new System.Drawing.Size(38, 26);
-            this.TrainsMgrPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.TrainsMgrPic.TabIndex = 5;
-            this.TrainsMgrPic.TabStop = false;
-            this.TrainsMgrPic.Click += new System.EventHandler(this.guna2PictureBox1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::testing.Properties.Resources.uetrailwayslogo;
-            this.pictureBox1.Location = new System.Drawing.Point(-20, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 125);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // PassengerMGRBtn
             // 
             this.PassengerMGRBtn.Animated = true;
@@ -344,45 +270,31 @@
             this.PassengerMGRBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.PassengerMGRBtn.Click += new System.EventHandler(this.guna2GradientTileButton2_Click);
             // 
-            // PassengerMGRPic
-            // 
-            this.PassengerMGRPic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PassengerMGRPic.FillColor = System.Drawing.Color.Transparent;
-            this.PassengerMGRPic.Image = global::testing.Properties.Resources.bluePassenger1;
-            this.PassengerMGRPic.ImageRotate = 0F;
-            this.PassengerMGRPic.Location = new System.Drawing.Point(122, 295);
-            this.PassengerMGRPic.Name = "PassengerMGRPic";
-            this.PassengerMGRPic.Size = new System.Drawing.Size(38, 26);
-            this.PassengerMGRPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PassengerMGRPic.TabIndex = 16;
-            this.PassengerMGRPic.TabStop = false;
-            this.PassengerMGRPic.UseTransparentBackground = true;
-            // 
             // guna2DataGridView1
             // 
             this.guna2DataGridView1.AllowUserToAddRows = false;
             this.guna2DataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.guna2DataGridView1.ColumnHeadersHeight = 16;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(185, 384);
@@ -604,7 +516,7 @@
             this.PassengerNaeTX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.PassengerNaeTX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.PassengerNaeTX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PassengerNaeTX.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PassengerNaeTX.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.PassengerNaeTX.ForeColor = System.Drawing.SystemColors.Highlight;
             this.PassengerNaeTX.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PassengerNaeTX.Location = new System.Drawing.Point(186, 71);
@@ -641,21 +553,6 @@
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(900, 1);
             this.guna2CustomGradientPanel2.TabIndex = 37;
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Image = global::testing.Properties.Resources.bluePassenger1;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(164, 3);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(54, 41);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox2.TabIndex = 36;
-            this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.UseTransparentBackground = true;
             // 
             // guna2HtmlLabel2
             // 
@@ -774,6 +671,110 @@
             this.guna2CustomGradientPanel7.Size = new System.Drawing.Size(272, 1);
             this.guna2CustomGradientPanel7.TabIndex = 54;
             // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.Image = global::testing.Properties.Resources.bluePassenger1;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(164, 3);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(54, 41);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 36;
+            this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.UseTransparentBackground = true;
+            // 
+            // PassengerMGRPic
+            // 
+            this.PassengerMGRPic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PassengerMGRPic.FillColor = System.Drawing.Color.Transparent;
+            this.PassengerMGRPic.Image = global::testing.Properties.Resources.bluePassenger1;
+            this.PassengerMGRPic.ImageRotate = 0F;
+            this.PassengerMGRPic.Location = new System.Drawing.Point(122, 295);
+            this.PassengerMGRPic.Name = "PassengerMGRPic";
+            this.PassengerMGRPic.Size = new System.Drawing.Size(38, 26);
+            this.PassengerMGRPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PassengerMGRPic.TabIndex = 16;
+            this.PassengerMGRPic.TabStop = false;
+            this.PassengerMGRPic.UseTransparentBackground = true;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2PictureBox1.Image = global::testing.Properties.Resources.logout_removebg_preview;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 491);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(38, 26);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 13;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // CancellationMGRPic
+            // 
+            this.CancellationMGRPic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CancellationMGRPic.Image = global::testing.Properties.Resources.image_2024_05_01_135359567_removebg_preview;
+            this.CancellationMGRPic.ImageRotate = 0F;
+            this.CancellationMGRPic.Location = new System.Drawing.Point(0, 263);
+            this.CancellationMGRPic.Name = "CancellationMGRPic";
+            this.CancellationMGRPic.Size = new System.Drawing.Size(38, 26);
+            this.CancellationMGRPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CancellationMGRPic.TabIndex = 11;
+            this.CancellationMGRPic.TabStop = false;
+            this.CancellationMGRPic.Click += new System.EventHandler(this.CancellationMGRPic_Click);
+            // 
+            // TicketsMGRPic
+            // 
+            this.TicketsMGRPic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TicketsMGRPic.Image = global::testing.Properties.Resources.image_2024_05_01_134354312_removebg_preview;
+            this.TicketsMGRPic.ImageRotate = 0F;
+            this.TicketsMGRPic.Location = new System.Drawing.Point(0, 231);
+            this.TicketsMGRPic.Name = "TicketsMGRPic";
+            this.TicketsMGRPic.Size = new System.Drawing.Size(38, 26);
+            this.TicketsMGRPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.TicketsMGRPic.TabIndex = 9;
+            this.TicketsMGRPic.TabStop = false;
+            this.TicketsMGRPic.Click += new System.EventHandler(this.TicketsMGRPic_Click);
+            // 
+            // RoutesMGRPic
+            // 
+            this.RoutesMGRPic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RoutesMGRPic.Image = global::testing.Properties.Resources.image_2024_05_01_133125829_removebg_preview;
+            this.RoutesMGRPic.ImageRotate = 0F;
+            this.RoutesMGRPic.Location = new System.Drawing.Point(0, 199);
+            this.RoutesMGRPic.Name = "RoutesMGRPic";
+            this.RoutesMGRPic.Size = new System.Drawing.Size(38, 26);
+            this.RoutesMGRPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.RoutesMGRPic.TabIndex = 7;
+            this.RoutesMGRPic.TabStop = false;
+            this.RoutesMGRPic.Click += new System.EventHandler(this.RoutesMGRPic_Click);
+            // 
+            // TrainsMgrPic
+            // 
+            this.TrainsMgrPic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TrainsMgrPic.Image = global::testing.Properties.Resources.image_2024_05_01_130640974_removebg_preview;
+            this.TrainsMgrPic.ImageRotate = 0F;
+            this.TrainsMgrPic.Location = new System.Drawing.Point(0, 167);
+            this.TrainsMgrPic.Name = "TrainsMgrPic";
+            this.TrainsMgrPic.Size = new System.Drawing.Size(38, 26);
+            this.TrainsMgrPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.TrainsMgrPic.TabIndex = 5;
+            this.TrainsMgrPic.TabStop = false;
+            this.TrainsMgrPic.Click += new System.EventHandler(this.guna2PictureBox1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::testing.Properties.Resources.uetrailwayslogo;
+            this.pictureBox1.Location = new System.Drawing.Point(-20, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 125);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // PassengerManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -808,15 +809,15 @@
             this.Text = "adminMainform";
             this.Load += new System.EventHandler(this.adminMainform_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PassengerMGRPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CancellationMGRPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TicketsMGRPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RoutesMGRPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TrainsMgrPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PassengerMGRPic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

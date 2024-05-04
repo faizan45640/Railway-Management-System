@@ -11,6 +11,10 @@ namespace testing
         {
             InitializeComponent();
             Populate();
+            RoutesManager rm = new RoutesManager();
+            rm.changeStatusonRouteDate();
+            
+
         }
         private void Populate()
         {
@@ -31,6 +35,8 @@ namespace testing
             guna2DataGridView1.DataSource = ds.Tables["Train"];
             //close connection
             conn.Close();
+            RoutesManager rm = new RoutesManager();
+            rm.changeStatusonRouteDate();
         }
         private void adminMainform_Load(object sender, EventArgs e)
         {
@@ -86,8 +92,8 @@ namespace testing
         private void TicketsMGRBtn_Click(object sender, EventArgs e)
         {
             //open tickets manager form
-            //TicketsManager tm = new TicketsManager();
-            //tm.Show();
+            TicketsManager tm = new TicketsManager();
+            tm.Show();
             this.Close();
 
         }
@@ -367,6 +373,15 @@ namespace testing
             conn.Close();
 
             Populate();
+        }
+
+        private void TicketsMGRPic_Click(object sender, EventArgs e)
+        {
+            //open tickets manager
+            TicketsManager tm = new TicketsManager();
+            tm.Show();
+            this.Close();
+
         }
     }
 }

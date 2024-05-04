@@ -46,8 +46,8 @@ namespace testing
         private void RoutesMGRBtn_Click(object sender, EventArgs e)
         {
             //open routes manager form
-            //RoutesManager rm = new RoutesManager();
-            //rm.Show();
+            RoutesManager rm = new RoutesManager();
+            rm.Show();
             this.Close();
 
         }
@@ -55,8 +55,8 @@ namespace testing
         private void RoutesMGRPic_Click(object sender, EventArgs e)
         {
             //open routes manager form
-            //RoutesManager rm = new RoutesManager();
-            //rm.Show();
+            RoutesManager rm = new RoutesManager();
+            rm.Show();
             this.Close();
 
         }
@@ -64,8 +64,8 @@ namespace testing
         private void TicketsMGRBtn_Click(object sender, EventArgs e)
         {
             //open tickets manager form
-            //TicketsManager tm = new TicketsManager();
-            //tm.Show();
+            TicketsManager tm = new TicketsManager();
+            tm.Show();
             this.Close();
 
         }
@@ -121,6 +121,15 @@ namespace testing
             userLogin us = new userLogin();
             this.Close();
             us.Show();
+        }
+
+        private void TicketsMGRPic_Click(object sender, EventArgs e)
+        {
+            //open tickets manager form
+            TicketsManager tm = new TicketsManager();
+            tm.Show();
+            this.Close();
+
         }
     }
 }
