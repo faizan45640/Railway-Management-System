@@ -1,6 +1,6 @@
 ﻿namespace testing
 {
-    partial class adminMainform
+    partial class RoutesManager
     {
         /// <summary>
         /// Required designer variable.

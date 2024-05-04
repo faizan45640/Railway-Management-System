@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace testing
 {
-    public partial class adminMainform : Form
+    public partial class RoutesManager : Form
     {
-        public adminMainform()
+        public RoutesManager()
         {
             InitializeComponent();
         }

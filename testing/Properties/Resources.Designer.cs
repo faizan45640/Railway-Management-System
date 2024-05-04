@@ -73,6 +73,46 @@ namespace testing.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bluePassenger {
+            get {
+                object obj = ResourceManager.GetObject("bluePassenger", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bluePassenger1 {
+            get {
+                object obj = ResourceManager.GetObject("bluePassenger1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap blueroutes {
+            get {
+                object obj = ResourceManager.GetObject("blueroutes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bluetrain {
+            get {
+                object obj = ResourceManager.GetObject("bluetrain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap image_2024_05_01_130640974_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("image_2024-05-01_130640974-removebg-preview", resourceCulture);
@@ -126,6 +166,16 @@ namespace testing.Properties {
         internal static System.Drawing.Bitmap image_2024_05_03_190726920_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("image_2024-05-03_190726920-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logout_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("logout-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

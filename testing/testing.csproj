@@ -141,6 +141,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RoutesManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoutesManager.Designer.cs">
+      <DependentUpon>RoutesManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PassengerManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassengerManager.Designer.cs">
+      <DependentUpon>PassengerManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="adminMainform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,47 +160,11 @@
       <DependentUpon>adminMainform.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseConnection.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reservationmanager.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reservationmanager.Designer.cs">
-      <DependentUpon>Reservationmanager.cs</DependentUpon>
-    </Compile>
-    <Compile Include="cancellationmanager.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="cancellationmanager.Designer.cs">
-      <DependentUpon>cancellationmanager.cs</DependentUpon>
-    </Compile>
-    <Compile Include="routesmanager.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="routesmanager.Designer.cs">
-      <DependentUpon>routesmanager.cs</DependentUpon>
-    </Compile>
-    <Compile Include="passengermanager.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="passengermanager.Designer.cs">
-      <DependentUpon>passengermanager.cs</DependentUpon>
-    </Compile>
     <Compile Include="trainsmanager.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="trainsmanager.Designer.cs">
       <DependentUpon>trainsmanager.cs</DependentUpon>
-    </Compile>
-    <Compile Include="mainform.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="mainform.Designer.cs">
-      <DependentUpon>mainform.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -204,30 +180,18 @@
     <Compile Include="userSignup.Designer.cs">
       <DependentUpon>userSignup.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RoutesManager.resx">
+      <DependentUpon>RoutesManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassengerManager.resx">
+      <DependentUpon>PassengerManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="adminMainform.resx">
       <DependentUpon>adminMainform.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
-    <EmbeddedResource Include="Reservationmanager.resx">
-      <DependentUpon>Reservationmanager.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="cancellationmanager.resx">
-      <DependentUpon>cancellationmanager.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="routesmanager.resx">
-      <DependentUpon>routesmanager.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="passengermanager.resx">
-      <DependentUpon>passengermanager.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="trainsmanager.resx">
       <DependentUpon>trainsmanager.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="mainform.resx">
-      <DependentUpon>mainform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -309,6 +273,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image_2024-05-03_190726920-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluePassenger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluePassenger1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

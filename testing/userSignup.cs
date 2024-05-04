@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using System.Drawing;
 using System.Net.Mail;
+using System.Windows.Forms;
 
 namespace testing
 {
@@ -18,7 +11,7 @@ namespace testing
         public userSignup()
         {
             InitializeComponent();
-            
+
         }
 
         private void userSignup_Load(object sender, EventArgs e)
@@ -42,7 +35,7 @@ namespace testing
         {
             //connection string
 
-           // string connectionString = "Data Source=DESKTOP-MDFVLLC\\SQLEXPRESS;Initial Catalog=RailwayMS;Integrated Security=True;Encrypt=False";
+            // string connectionString = "Data Source=DESKTOP-MDFVLLC\\SQLEXPRESS;Initial Catalog=RailwayMS;Integrated Security=True;Encrypt=False";
             //establish connection
             SqlConnection conn = new DatabaseConnection().getConnection();
             //open connection
@@ -90,7 +83,7 @@ namespace testing
             }
             reader.Close();
 
-            string query = " SET ANSI_WARNINGS OFF; insert into Passenger values('" + Username + "','" + Email + "' , '"+ Password +"' , '"+ Address+ "' , '"+Phone+"' , '"+gender+ "');  SET ANSI_WARNINGS ON;";
+            string query = " SET ANSI_WARNINGS OFF; insert into Passenger values('" + Username + "','" + Email + "' , '" + Password + "' , '" + Address + "' , '" + Phone + "' , '" + gender + "');  SET ANSI_WARNINGS ON;";
             //prepare command
 
 
@@ -99,7 +92,7 @@ namespace testing
             SqlCommand cmd = new SqlCommand(query, conn);
             //execute command
             //get colors of all textboxes
-           Color usernameColor= guna2CustomGradientPanel2.FillColor2;
+            Color usernameColor = guna2CustomGradientPanel2.FillColor2;
             Color emailColor = guna2CustomGradientPanel3.FillColor2;
             Color passwordColor = guna2CustomGradientPanel4.FillColor2;
             Color addressColor = guna2CustomGradientPanel5.FillColor2;
@@ -118,16 +111,16 @@ namespace testing
             {
                 guna2CustomGradientPanel2.FillColor = usernameColor;
             }
-            if(EmailTXT.Text == "")
+            if (EmailTXT.Text == "")
             {
                 guna2CustomGradientPanel3.FillColor = Color.Red;
-                
+
             }
             else
             {
                 guna2CustomGradientPanel3.FillColor = emailColor;
             }
-            if(TXTpassword.Text == "")
+            if (TXTpassword.Text == "")
             {
                 guna2CustomGradientPanel4.FillColor = Color.Red;
             }
@@ -135,7 +128,7 @@ namespace testing
             {
                 guna2CustomGradientPanel4.FillColor = passwordColor;
             }
-            if(AddressTXT.Text == "")
+            if (AddressTXT.Text == "")
             {
                 guna2CustomGradientPanel5.FillColor = Color.Red;
             }
@@ -143,7 +136,7 @@ namespace testing
             {
                 guna2CustomGradientPanel5.FillColor = addressColor;
             }
-            if(PhoneTXT.Text == "")
+            if (PhoneTXT.Text == "")
             {
                 guna2CustomGradientPanel6.FillColor = Color.Red;
             }
@@ -151,17 +144,17 @@ namespace testing
             {
                 guna2CustomGradientPanel6.FillColor = phoneColor;
             }
-            
-           if (UsernameTXT.Text == "" || EmailTXT.Text == "" || TXTpassword.Text == "" || AddressTXT.Text == "" || PhoneTXT.Text == "")
+
+            if (UsernameTXT.Text == "" || EmailTXT.Text == "" || TXTpassword.Text == "" || AddressTXT.Text == "" || PhoneTXT.Text == "")
             {
-                
+
                 MessageBox.Show("Please fill all fields");
             }
-            
+
 
             else
             {
-                if(PhoneTXT.Text.Length != 11)
+                if (PhoneTXT.Text.Length != 11)
                 {
                     MessageBox.Show("Phone number must be 11 digits");
                     PhoneTXT.Clear();
@@ -169,7 +162,7 @@ namespace testing
                 }
                 else
                 {
-                    
+
                     //execute command
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("User Registered Successfully");
@@ -179,16 +172,16 @@ namespace testing
                     cmd.Dispose();
 
                 }
-                
+
             }
-            
+
 
 
         }
 
         private void Maleradiobtn_CheckedChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void ExitBTN_Click(object sender, EventArgs e)

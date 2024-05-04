@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Diagnostics.Eventing.Reader;
+using System.Windows.Forms;
 
 
 namespace testing
@@ -54,11 +46,11 @@ namespace testing
 
             // string connectionString = "\\SQLEXPRESS;Initial Catalog=RailwayMS;Integrated Security=True;Encrypt=False";
             //string connectionString = "Data Source=DESKTOP-MDFVLLC\\SQLEXPRESS;Initial Catalog=RailwayMS;Integrated Security=True;Encrypt=False";
-            
-            
-            
+
+
+
             //Establish Connection
-           SqlConnection conn= new DatabaseConnection().getConnection();
+            SqlConnection conn = new DatabaseConnection().getConnection();
             //open connection
             conn.Open();
             //prepare query
@@ -70,33 +62,33 @@ namespace testing
             if (!Loginasadmincheckox.Checked)
             {
                 //check for passenger id and password
-                 query = "select * from Passenger where username = '" + username + "' and password = '" + password + "'";
-                usertype="Passenger";
+                query = "select * from Passenger where username = '" + username + "' and password = '" + password + "'";
+                usertype = "Passenger";
             }
             else
             {
                 //check for admin id and password
-                 query = "select * from ADMIN where name = '" + username + "' and password = '" + password + "'";
+                query = "select * from ADMIN where name = '" + username + "' and password = '" + password + "'";
                 usertype = "ADMIN";
             }
-           
+
 
             //prepare command
             SqlCommand cmd = new SqlCommand(query, conn);
             //execute command
             SqlDataReader reader = cmd.ExecuteReader();
             //check if user exists
-            if (reader.Read() && usertype=="ADMIN")
+            if (reader.Read() && usertype == "ADMIN")
             {
 
                 //close connection
                 conn.Close();
                 //open new form
-                adminMainform mf= new adminMainform();
+                adminMainform mf = new adminMainform();
                 mf.Show();
                 this.Hide();
             }
-            
+
             else
             {
                 MessageBox.Show("Invalid Username or Password");
