@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Diagnostics.Eventing.Reader;
+
 
 namespace testing
 {
@@ -49,33 +51,52 @@ namespace testing
         private void Loginbtn_Click(object sender, EventArgs e)
         {
             //ADDRESS of sql server and database name
-           
+
             // string connectionString = "\\SQLEXPRESS;Initial Catalog=RailwayMS;Integrated Security=True;Encrypt=False";
-            string connectionString = "Data Source=DESKTOP-MDFVLLC\\SQLEXPRESS;Initial Catalog=RailwayMS;Integrated Security=True;Encrypt=False";
+            //string connectionString = "Data Source=DESKTOP-MDFVLLC\\SQLEXPRESS;Initial Catalog=RailwayMS;Integrated Security=True;Encrypt=False";
+            
+            
+            
             //Establish Connection
-            SqlConnection conn = new SqlConnection(connectionString);
+           SqlConnection conn= new DatabaseConnection().getConnection();
             //open connection
             conn.Open();
             //prepare query
             string username = UsernameTXT.Text;
             string password = PasswordTXT.Text;
+            string query;
+            string usertype;
+            //will check for adminchecbox
+            if (!Loginasadmincheckox.Checked)
+            {
+                //check for passenger id and password
+                 query = "select * from Passenger where username = '" + username + "' and password = '" + password + "'";
+                usertype="Passenger";
+            }
+            else
+            {
+                //check for admin id and password
+                 query = "select * from ADMIN where name = '" + username + "' and password = '" + password + "'";
+                usertype = "ADMIN";
+            }
+           
 
-            string query = "select * from Passenger where username = '" + username+ "' and password = '" +password + "'";
             //prepare command
             SqlCommand cmd = new SqlCommand(query, conn);
             //execute command
             SqlDataReader reader = cmd.ExecuteReader();
             //check if user exists
-            if (reader.Read())
+            if (reader.Read() && usertype=="ADMIN")
             {
 
                 //close connection
                 conn.Close();
                 //open new form
-                mainform mf = new mainform();
+                adminMainform mf= new adminMainform();
                 mf.Show();
                 this.Hide();
             }
+            
             else
             {
                 MessageBox.Show("Invalid Username or Password");

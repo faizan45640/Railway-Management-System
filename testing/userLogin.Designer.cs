@@ -41,6 +41,7 @@
             this.signUpherebutton = new Guna.UI2.WinForms.Guna2TileButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ExitBTN = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.Loginasadmincheckox = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -180,7 +181,7 @@
             this.Loginbtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(143)))), ((int)(((byte)(211)))));
             this.Loginbtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Loginbtn.ForeColor = System.Drawing.Color.White;
-            this.Loginbtn.Location = new System.Drawing.Point(336, 205);
+            this.Loginbtn.Location = new System.Drawing.Point(336, 220);
             this.Loginbtn.Name = "Loginbtn";
             this.Loginbtn.ShadowDecoration.CustomizableEdges.BottomLeft = false;
             this.Loginbtn.ShadowDecoration.CustomizableEdges.BottomRight = false;
@@ -197,7 +198,7 @@
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(375, 260);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(375, 270);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(75, 15);
             this.guna2HtmlLabel3.TabIndex = 7;
@@ -214,7 +215,7 @@
             this.signUpherebutton.FillColor = System.Drawing.Color.Transparent;
             this.signUpherebutton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.signUpherebutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.signUpherebutton.Location = new System.Drawing.Point(456, 258);
+            this.signUpherebutton.Location = new System.Drawing.Point(456, 268);
             this.signUpherebutton.Name = "signUpherebutton";
             this.signUpherebutton.Size = new System.Drawing.Size(95, 19);
             this.signUpherebutton.TabIndex = 8;
@@ -255,12 +256,34 @@
             this.ExitBTN.Text = "EXIT";
             this.ExitBTN.Click += new System.EventHandler(this.ExitBTN_Click);
             // 
+            // Loginasadmincheckox
+            // 
+            this.Loginasadmincheckox.AutoSize = true;
+            this.Loginasadmincheckox.BackColor = System.Drawing.Color.Transparent;
+            this.Loginasadmincheckox.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Loginasadmincheckox.CheckedState.BorderRadius = 0;
+            this.Loginasadmincheckox.CheckedState.BorderThickness = 0;
+            this.Loginasadmincheckox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Loginasadmincheckox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Loginasadmincheckox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(174)))), ((int)(((byte)(222)))));
+            this.Loginasadmincheckox.Location = new System.Drawing.Point(336, 181);
+            this.Loginasadmincheckox.Name = "Loginasadmincheckox";
+            this.Loginasadmincheckox.Size = new System.Drawing.Size(124, 21);
+            this.Loginasadmincheckox.TabIndex = 5;
+            this.Loginasadmincheckox.Text = "Login as Admin";
+            this.Loginasadmincheckox.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Loginasadmincheckox.UncheckedState.BorderRadius = 0;
+            this.Loginasadmincheckox.UncheckedState.BorderThickness = 1;
+            this.Loginasadmincheckox.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.Loginasadmincheckox.UseVisualStyleBackColor = false;
+            // 
             // userLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(655, 450);
+            this.Controls.Add(this.Loginasadmincheckox);
             this.Controls.Add(this.signUpherebutton);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.Loginbtn);
@@ -298,5 +321,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2TileButton signUpherebutton;
         private Guna.UI2.WinForms.Guna2GradientTileButton ExitBTN;
+        private Guna.UI2.WinForms.Guna2CheckBox Loginasadmincheckox;
     }
 }

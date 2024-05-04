@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+using System.Net.Mail;
+
 namespace testing
 {
     public partial class userSignup : Form
@@ -40,9 +42,9 @@ namespace testing
         {
             //connection string
 
-            string connectionString = "Data Source=DESKTOP-MDFVLLC\\SQLEXPRESS;Initial Catalog=RailwayMS;Integrated Security=True;Encrypt=False";
+           // string connectionString = "Data Source=DESKTOP-MDFVLLC\\SQLEXPRESS;Initial Catalog=RailwayMS;Integrated Security=True;Encrypt=False";
             //establish connection
-            SqlConnection conn = new SqlConnection(connectionString);
+            SqlConnection conn = new DatabaseConnection().getConnection();
             //open connection
             conn.Open();
             //prepare query
@@ -60,6 +62,22 @@ namespace testing
             string Username = UsernameTXT.Text;
             string Address = AddressTXT.Text;
             string Password = TXTpassword.Text;
+
+            //check for valid email
+            if (Email != "")
+            {
+                try
+                {
+                    MailAddress m = new MailAddress(Email);
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Invalid Email");
+                    EmailTXT.Focus();
+                    return;
+                }
+            }
+
             //check for duplicate email violation
             string query1 = "select * from Passenger where Email = '" + Email + "'";
             SqlCommand cmd1 = new SqlCommand(query1, conn);
@@ -80,14 +98,66 @@ namespace testing
 
             SqlCommand cmd = new SqlCommand(query, conn);
             //execute command
-            
-            
+            //get colors of all textboxes
+           Color usernameColor= guna2CustomGradientPanel2.FillColor2;
+            Color emailColor = guna2CustomGradientPanel3.FillColor2;
+            Color passwordColor = guna2CustomGradientPanel4.FillColor2;
+            Color addressColor = guna2CustomGradientPanel5.FillColor2;
+            Color phoneColor = guna2CustomGradientPanel6.FillColor2;
+            //on text changed back to orignal
 
-            if(UsernameTXT.Text == "" || EmailTXT.Text == "" || TXTpassword.Text == "" || AddressTXT.Text == "" || PhoneTXT.Text == "")
+
+
+
+
+            if (UsernameTXT.Text == "")
+            {
+                guna2CustomGradientPanel2.FillColor = Color.Red;
+            }
+            else
+            {
+                guna2CustomGradientPanel2.FillColor = usernameColor;
+            }
+            if(EmailTXT.Text == "")
+            {
+                guna2CustomGradientPanel3.FillColor = Color.Red;
+                
+            }
+            else
+            {
+                guna2CustomGradientPanel3.FillColor = emailColor;
+            }
+            if(TXTpassword.Text == "")
+            {
+                guna2CustomGradientPanel4.FillColor = Color.Red;
+            }
+            else
+            {
+                guna2CustomGradientPanel4.FillColor = passwordColor;
+            }
+            if(AddressTXT.Text == "")
+            {
+                guna2CustomGradientPanel5.FillColor = Color.Red;
+            }
+            else
+            {
+                guna2CustomGradientPanel5.FillColor = addressColor;
+            }
+            if(PhoneTXT.Text == "")
+            {
+                guna2CustomGradientPanel6.FillColor = Color.Red;
+            }
+            else
+            {
+                guna2CustomGradientPanel6.FillColor = phoneColor;
+            }
+            
+           if (UsernameTXT.Text == "" || EmailTXT.Text == "" || TXTpassword.Text == "" || AddressTXT.Text == "" || PhoneTXT.Text == "")
             {
                 
                 MessageBox.Show("Please fill all fields");
             }
+            
 
             else
             {
