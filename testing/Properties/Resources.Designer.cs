@@ -93,6 +93,16 @@ namespace testing.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blueaccountsettings {
+            get {
+                object obj = ResourceManager.GetObject("blueaccountsettings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bluePassenger {
             get {
                 object obj = ResourceManager.GetObject("bluePassenger", resourceCulture);
@@ -126,6 +136,16 @@ namespace testing.Properties {
         internal static System.Drawing.Bitmap bluetrain {
             get {
                 object obj = ResourceManager.GetObject("bluetrain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap historywith_bg_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("historywith_bg-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -256,6 +276,16 @@ namespace testing.Properties {
         internal static System.Drawing.Bitmap uetrailwayslogo {
             get {
                 object obj = ResourceManager.GetObject("uetrailwayslogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap whiteaccountsetting {
+            get {
+                object obj = ResourceManager.GetObject("whiteaccountsetting", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

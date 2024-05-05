@@ -104,6 +104,7 @@ namespace testing
             CancellationManager cm = new CancellationManager();
             cm.Show();
             this.Close();
+           
 
         }
 

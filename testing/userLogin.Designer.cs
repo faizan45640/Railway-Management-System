@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.ExitBTN = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
@@ -39,8 +41,6 @@
             this.Loginbtn = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.signUpherebutton = new Guna.UI2.WinForms.Guna2TileButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ExitBTN = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.Loginasadmincheckox = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,17 +62,27 @@
             this.guna2CustomGradientPanel1.TabIndex = 0;
             this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
             // 
-            // label1
+            // ExitBTN
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(44, 174);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(215, 31);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "WELCOME PAGE";
+            this.ExitBTN.Animated = true;
+            this.ExitBTN.AutoRoundedCorners = true;
+            this.ExitBTN.BorderRadius = 14;
+            this.ExitBTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ExitBTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ExitBTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ExitBTN.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ExitBTN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ExitBTN.FillColor = System.Drawing.Color.White;
+            this.ExitBTN.FillColor2 = System.Drawing.Color.White;
+            this.ExitBTN.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ExitBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ExitBTN.IndicateFocus = true;
+            this.ExitBTN.Location = new System.Drawing.Point(73, 410);
+            this.ExitBTN.Name = "ExitBTN";
+            this.ExitBTN.Size = new System.Drawing.Size(144, 31);
+            this.ExitBTN.TabIndex = 4;
+            this.ExitBTN.Text = "EXIT";
+            this.ExitBTN.Click += new System.EventHandler(this.ExitBTN_Click);
             // 
             // guna2HtmlLabel1
             // 
@@ -84,6 +94,30 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(197, 21);
             this.guna2HtmlLabel1.TabIndex = 3;
             this.guna2HtmlLabel1.Text = "Sign in   to continue access ";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::testing.Properties.Resources.image_2024_05_03_190726920_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(50, 15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(187, 116);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(44, 174);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(215, 31);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "WELCOME PAGE";
             // 
             // guna2HtmlLabel2
             // 
@@ -139,10 +173,11 @@
             this.UsernameTXT.Name = "UsernameTXT";
             this.UsernameTXT.PasswordChar = '\0';
             this.UsernameTXT.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(143)))), ((int)(((byte)(211)))));
-            this.UsernameTXT.PlaceholderText = "Username";
+            this.UsernameTXT.PlaceholderText = "Email";
             this.UsernameTXT.SelectedText = "";
             this.UsernameTXT.Size = new System.Drawing.Size(272, 36);
             this.UsernameTXT.TabIndex = 4;
+            this.UsernameTXT.TextChanged += new System.EventHandler(this.UsernameTXT_TextChanged);
             // 
             // PasswordTXT
             // 
@@ -222,40 +257,6 @@
             this.signUpherebutton.Text = "Sign Up here";
             this.signUpherebutton.Click += new System.EventHandler(this.signUpherebutton_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::testing.Properties.Resources.image_2024_05_03_190726920_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(50, 15);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(187, 116);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // ExitBTN
-            // 
-            this.ExitBTN.Animated = true;
-            this.ExitBTN.AutoRoundedCorners = true;
-            this.ExitBTN.BorderRadius = 14;
-            this.ExitBTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.ExitBTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.ExitBTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ExitBTN.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ExitBTN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.ExitBTN.FillColor = System.Drawing.Color.White;
-            this.ExitBTN.FillColor2 = System.Drawing.Color.White;
-            this.ExitBTN.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ExitBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ExitBTN.IndicateFocus = true;
-            this.ExitBTN.Location = new System.Drawing.Point(73, 410);
-            this.ExitBTN.Name = "ExitBTN";
-            this.ExitBTN.Size = new System.Drawing.Size(144, 31);
-            this.ExitBTN.TabIndex = 4;
-            this.ExitBTN.Text = "EXIT";
-            this.ExitBTN.Click += new System.EventHandler(this.ExitBTN_Click);
-            // 
             // Loginasadmincheckox
             // 
             this.Loginasadmincheckox.AutoSize = true;
@@ -264,7 +265,7 @@
             this.Loginasadmincheckox.CheckedState.BorderRadius = 0;
             this.Loginasadmincheckox.CheckedState.BorderThickness = 0;
             this.Loginasadmincheckox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Loginasadmincheckox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Loginasadmincheckox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold);
             this.Loginasadmincheckox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(174)))), ((int)(((byte)(222)))));
             this.Loginasadmincheckox.Location = new System.Drawing.Point(336, 181);
             this.Loginasadmincheckox.Name = "Loginasadmincheckox";

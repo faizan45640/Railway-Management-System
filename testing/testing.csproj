@@ -141,6 +141,19 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="loggedinUserdetail.cs" />
+    <Compile Include="account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="account.Designer.cs">
+      <DependentUpon>account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="passengerMainform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="passengerMainform.Designer.cs">
+      <DependentUpon>passengerMainform.cs</DependentUpon>
+    </Compile>
     <Compile Include="CancellationManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +205,12 @@
     <Compile Include="userSignup.Designer.cs">
       <DependentUpon>userSignup.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="account.resx">
+      <DependentUpon>account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="passengerMainform.resx">
+      <DependentUpon>passengerMainform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CancellationManager.resx">
       <DependentUpon>CancellationManager.cs</DependentUpon>
     </EmbeddedResource>
@@ -306,6 +325,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\blue cancellation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whiteaccountsetting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\historywith_bg-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueaccountsettings.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -199,7 +199,7 @@ namespace testing
                 }
                 conn.Close();
                 //set status to cancelled
-                conn.Open();
+                conn.Open();    
                 string query1 = "update Reservation set status='Cancelled' where id='" + b + "'";
                 SqlCommand cmd= new SqlCommand(query1, conn);
                 cmd.ExecuteNonQuery();

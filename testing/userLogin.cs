@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.SqlServer.Server;
+using System;
 using System.Data.SqlClient;
+using System.Diagnostics.Eventing.Reader;
 using System.Windows.Forms;
 
 
@@ -11,6 +13,7 @@ namespace testing
         {
             InitializeComponent();
         }
+        public static int loggedInpassengerID=-1;
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -54,22 +57,26 @@ namespace testing
             //open connection
             conn.Open();
             //prepare query
-            string username = UsernameTXT.Text;
+            string email = UsernameTXT.Text;
             string password = PasswordTXT.Text;
-            string query;
-            string usertype;
+            string query="";
+            string usertype="";
             //will check for adminchecbox
-            if (!Loginasadmincheckox.Checked)
+            if (Loginasadmincheckox.Checked)
             {
                 //check for passenger id and password
-                query = "select * from Passenger where username = '" + username + "' and password = '" + password + "'";
-                usertype = "Passenger";
+                query = "select * from ADMIN where email = '" + email + "' and password = '" + password + "'";
+                usertype = "ADMIN";
             }
-            else
+            else if(Loginasadmincheckox.Checked==false)
             {
                 //check for admin id and password
-                query = "select * from ADMIN where name = '" + username + "' and password = '" + password + "'";
-                usertype = "ADMIN";
+                
+                
+                query = "select * from Passenger where email = '" + email + "' and password = '" + password + "'";
+                usertype = "Passenger";
+                
+
             }
 
 
@@ -78,15 +85,44 @@ namespace testing
             //execute command
             SqlDataReader reader = cmd.ExecuteReader();
             //check if user exists
-            if (reader.Read() && usertype == "ADMIN")
+            if (usertype == "ADMIN")
             {
-
-                //close connection
+                if (reader.Read())
+                {
+                    //close connection
+                    conn.Close();
+                    //open new form
+                    adminMainform mf = new adminMainform();
+                    mf.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Email or password");
+                    UsernameTXT.Clear();
+                    PasswordTXT.Clear();
+                    return;
+                }
+                
+            }
+            else if(reader.Read())
+            {
                 conn.Close();
-                //open new form
-                adminMainform mf = new adminMainform();
+                passengerMainform mf = new passengerMainform();
+                conn.Open();
+                query = "Select id from Passenger WHERE email ='" + email + "' ;";
+                //prepare command
+                SqlCommand cm = new SqlCommand(query, conn);
+                //execute query
+                loggedinUserdetail.loggedinUserID = (int)cm.ExecuteScalar();
+                conn.Close();
+
                 mf.Show();
                 this.Hide();
+
+
+
+
             }
 
             else
@@ -103,6 +139,11 @@ namespace testing
         private void ExitBTN_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void UsernameTXT_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
