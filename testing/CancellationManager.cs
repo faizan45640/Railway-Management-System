@@ -22,7 +22,7 @@ namespace testing
             //current date time
             DateTime today = DateTime.Now;
             //prepare query
-            string query = "select Reservation.id AS id From Reservation INNER JOIN Route ON routeID=Route.id where date >  '" + today + "'";
+            string query = "select Reservation.id AS id From Reservation INNER JOIN Route ON routeID=Route.id where date >  '" + today + "' AND status='Active'";
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader rdr = cmd.ExecuteReader();
 

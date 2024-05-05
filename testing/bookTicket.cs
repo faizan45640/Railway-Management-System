@@ -1,49 +1,17 @@
 ﻿using System;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using System.Data.SqlClient; 
 
 namespace testing
 {
-    public partial class account : Form
+    public partial class bookTicket : Form
     {
-        
-        public account()
+        public int userLoggedInid = -1;
+        public bookTicket()
         {
             
             InitializeComponent();
-            populatefields();
-        }
-        int key = 0;
-        private void populatefields()
-        {
-            //connect to database
-            SqlConnection conn = new DatabaseConnection().getConnection();
-            conn.Open();
-            //prepare query
-            string query = "SELECT * FROM Passenger WHERE id = "  + loggedinUserdetail.loggedinUserID;
-            SqlCommand cmd = new SqlCommand(query, conn);
-            SqlDataReader reader = cmd.ExecuteReader();
-            if (reader.Read())
-            {
-                //populate fields
-                key= int.Parse(reader["id"].ToString());
-                PassengerNaeTX.Text = reader["username"].ToString();
-                PassengerMailTXT.Text = reader["email"].ToString();
-                PassengerPhoneTXT.Text = reader["phone"].ToString();
-                PassengerAddressTxt.Text = reader["address"].ToString();
-                PassengerPasswordTXT.Text = reader["password"].ToString();
-                if (reader["gender"].ToString() == "Male")
-                {
-                    MalerdioBTN.Checked = true;
-                }
-                else
-                {
-                    FemaleRDIOBTN.Checked = true;
-                }
-            }
-            conn.Close();
-
-
+            fillrouteidcombo();
         }
        
         private void adminMainform_Load(object sender, EventArgs e)
@@ -168,6 +136,10 @@ namespace testing
         private void myaccountBTN_Click(object sender, EventArgs e)
         {
             //open accountSettings form
+         account account = new account();
+            account.Show();
+            this.Close();
+            
             
             
 
@@ -175,7 +147,7 @@ namespace testing
 
         private void SearchRoutesBTN_Click(object sender, EventArgs e)
         {
-           // open search rooutes fomr
+            //open search rooutes fomr
             searchRoutes sr= new searchRoutes();
             sr.Show();
             this.Close();
@@ -185,9 +157,10 @@ namespace testing
         private void BookTicketBTN_Click(object sender, EventArgs e)
         {
             //open book tickets form
-           bookTicket bt = new bookTicket();
-            bt.Show();
-            this.Close();
+            //bookTickets bt = new bookTickets();
+            //bt.show();
+            //this.close();
+
         }
 
         private void bookticketpic_Click(object sender, EventArgs e)
@@ -235,59 +208,6 @@ namespace testing
 
         }
 
-        private void UpdateAccountBTN_Click(object sender, EventArgs e)
-        {
-            //update passenger
-            if(PassengerNaeTX.Text == "" || PassengerMailTXT.Text == "" || PassengerPhoneTXT.Text == "" || PassengerAddressTxt.Text == "" || PassengerPasswordTXT.Text == "" || (MalerdioBTN.Checked == false && FemaleRDIOBTN.Checked == false))
-            {
-                MessageBox.Show("Please fill all fields");
-                return;
-            }
-
-            //connect to database
-            SqlConnection conn = new DatabaseConnection().getConnection();
-            conn.Open();
-            //prepare query
-            string username= PassengerNaeTX.Text;
-            string email = PassengerMailTXT.Text;
-            string phone = PassengerPhoneTXT.Text;
-            string address = PassengerAddressTxt.Text;
-            string password = PassengerPasswordTXT.Text;
-            string gender="";
-            if(MalerdioBTN.Checked)
-            {
-                gender = "Male";
-
-            }
-            else
-            {
-                gender = "Female";
-            }
-            //check for existing email
-            string query = "SELECT * FROM Passenger WHERE email = '" + email + "' AND id != " + loggedinUserdetail.loggedinUserID;
-            SqlCommand cmd = new SqlCommand(query, conn);
-            SqlDataReader reader = cmd.ExecuteReader();
-            if (reader.Read())
-            {
-                MessageBox.Show("Email already exists");
-                conn.Close();
-                return;
-            }
-            conn.Close();
-            //update passenger
-            conn.Open();
-            query = "UPDATE Passenger SET username = '" + username + "', email = '" + email + "', phone = '" + phone + "', address = '" + address + "', password = '"+password+"', gender = '"+gender+"' WHERE id = " + key;
-            cmd = new SqlCommand(query, conn);
-            cmd.ExecuteNonQuery();
-            conn.Close();
-            MessageBox.Show("Account updated successfully");
-            populatefields();
-
-
-
-
-        }
-
         private void searchroutesticket_Click(object sender, EventArgs e)
         {
             //open search routes form
@@ -297,9 +217,85 @@ namespace testing
 
         }
 
-        private void TrainsMgrBtn_Click_1(object sender, EventArgs e)
+        private void fillrouteidcombo()
         {
-          
+           //connect to database
+            //fill route id combo box
+           SqlConnection conn = new DatabaseConnection().getConnection();
+
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("select id from Route", conn);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                routeIDcombo.Items.Add(dr["id"].ToString());
+            }
+            conn.Close();
+
+
+            
+
+
+
+        }
+
+        private void routeIDcombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //fill the textboxes with the selected route id
+            SqlConnection conn = new DatabaseConnection().getConnection();
+            int id = int.Parse(routeIDcombo.SelectedItem.ToString());
+
+
+            string query = " SELECT Route.id as ID, trainid AS[Train ID], name AS[Train Name],  source AS Source , destination as Destination , date AS Date , cost AS Cost FROM Route INNER JOIN Train ON trainid = Train.id WHERE '" + id + "'=Route.id";
+
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Open();
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                TrainIDTXT.Text = dr["Train ID"].ToString();
+                TrainNameTXT.Text = dr["Train Name"].ToString();
+                SourceTXTBox.Text = dr["Source"].ToString();
+                DestinationTXT.Text = dr["Destination"].ToString();
+                DateTXT.Text = dr["Date"].ToString();
+                CostTXT.Text = dr["Cost"].ToString();
+            }
+
+
+            conn.Close();
+        }
+
+        private void guna2HtmlLabel9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BookTicketTXT_Click(object sender, EventArgs e)
+        {
+            //book ticket
+            SqlConnection conn = new DatabaseConnection().getConnection();
+            conn.Open();
+            //check if the user has already booked this route
+            string query = "SELECT * FROM Reservation WHERE routeID = '" + routeIDcombo.SelectedItem.ToString() + "' AND passengerID = '" + loggedinUserdetail.loggedinUserID + "' AND status='Active'";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                MessageBox.Show("You have already booked this route");
+                return;
+            }
+            
+
+
+
+            conn.Close();
+            conn.Open();
+            query = "INSERT INTO Reservation (routeID, passengerID, status) VALUES ('" + routeIDcombo.SelectedItem + "','" +loggedinUserdetail.loggedinUserID + "' , 'Active')";
+           SqlCommand cmd2 = new SqlCommand(query, conn);
+            cmd2.ExecuteNonQuery();
+            MessageBox.Show("Ticket Booked Successfully");
+            conn.Close();
         }
     }
 }

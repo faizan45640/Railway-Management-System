@@ -31,14 +31,23 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PassengerManager));
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2GradientTileButton1 = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.CancellationMGRBtn = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.TicketsMGRBtn = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.RoutesMGRBtn = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.TrainsMgrBtn = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.ExitBTN = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.PassengerMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PassengerMGRBtn = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.guna2GradientTileButton1 = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.CancellationMGRBtn = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.CancellationMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.TicketsMGRBtn = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.TicketsMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.RoutesMGRBtn = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.RoutesMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.TrainsMgrBtn = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.TrainsMgrPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ExitBTN = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DeletePassengerBTN = new Guna.UI2.WinForms.Guna2GradientTileButton();
@@ -60,16 +69,8 @@
             this.PassengerPhoneTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CustomGradientPanel7 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.PassengerMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.CancellationMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.TicketsMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.RoutesMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.TrainsMgrPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             this.guna2CustomGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PassengerMGRPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CancellationMGRPic)).BeginInit();
@@ -77,6 +78,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.RoutesMGRPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TrainsMgrPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CustomGradientPanel1
@@ -96,6 +99,7 @@
             this.guna2CustomGradientPanel1.Controls.Add(this.TrainsMgrPic);
             this.guna2CustomGradientPanel1.Controls.Add(this.ExitBTN);
             this.guna2CustomGradientPanel1.Controls.Add(this.pictureBox1);
+            this.guna2Transition1.SetDecoration(this.guna2CustomGradientPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(174)))), ((int)(((byte)(222)))));
@@ -106,150 +110,26 @@
             this.guna2CustomGradientPanel1.TabIndex = 1;
             this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
             // 
-            // guna2GradientTileButton1
+            // PassengerMGRPic
             // 
-            this.guna2GradientTileButton1.Animated = true;
-            this.guna2GradientTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientTileButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientTileButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientTileButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientTileButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientTileButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientTileButton1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GradientTileButton1.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2GradientTileButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientTileButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientTileButton1.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2GradientTileButton1.HoverState.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientTileButton1.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.guna2GradientTileButton1.Location = new System.Drawing.Point(32, 491);
-            this.guna2GradientTileButton1.Name = "guna2GradientTileButton1";
-            this.guna2GradientTileButton1.Size = new System.Drawing.Size(148, 26);
-            this.guna2GradientTileButton1.TabIndex = 14;
-            this.guna2GradientTileButton1.Text = "Passengers Manager";
-            this.guna2GradientTileButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientTileButton1.Click += new System.EventHandler(this.guna2GradientTileButton1_Click);
-            // 
-            // CancellationMGRBtn
-            // 
-            this.CancellationMGRBtn.Animated = true;
-            this.CancellationMGRBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CancellationMGRBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.CancellationMGRBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.CancellationMGRBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.CancellationMGRBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.CancellationMGRBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.CancellationMGRBtn.FillColor = System.Drawing.Color.Transparent;
-            this.CancellationMGRBtn.FillColor2 = System.Drawing.Color.Transparent;
-            this.CancellationMGRBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancellationMGRBtn.ForeColor = System.Drawing.Color.White;
-            this.CancellationMGRBtn.HoverState.FillColor = System.Drawing.Color.White;
-            this.CancellationMGRBtn.HoverState.FillColor2 = System.Drawing.Color.White;
-            this.CancellationMGRBtn.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.CancellationMGRBtn.Location = new System.Drawing.Point(32, 263);
-            this.CancellationMGRBtn.Name = "CancellationMGRBtn";
-            this.CancellationMGRBtn.Size = new System.Drawing.Size(148, 26);
-            this.CancellationMGRBtn.TabIndex = 12;
-            this.CancellationMGRBtn.Text = "Cancellations";
-            this.CancellationMGRBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.CancellationMGRBtn.Click += new System.EventHandler(this.CancellationMGRBtn_Click);
-            // 
-            // TicketsMGRBtn
-            // 
-            this.TicketsMGRBtn.Animated = true;
-            this.TicketsMGRBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TicketsMGRBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.TicketsMGRBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.TicketsMGRBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.TicketsMGRBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.TicketsMGRBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.TicketsMGRBtn.FillColor = System.Drawing.Color.Transparent;
-            this.TicketsMGRBtn.FillColor2 = System.Drawing.Color.Transparent;
-            this.TicketsMGRBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TicketsMGRBtn.ForeColor = System.Drawing.Color.White;
-            this.TicketsMGRBtn.HoverState.FillColor = System.Drawing.Color.White;
-            this.TicketsMGRBtn.HoverState.FillColor2 = System.Drawing.Color.White;
-            this.TicketsMGRBtn.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.TicketsMGRBtn.Location = new System.Drawing.Point(32, 231);
-            this.TicketsMGRBtn.Name = "TicketsMGRBtn";
-            this.TicketsMGRBtn.Size = new System.Drawing.Size(148, 26);
-            this.TicketsMGRBtn.TabIndex = 10;
-            this.TicketsMGRBtn.Text = "Tickets Manager";
-            this.TicketsMGRBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TicketsMGRBtn.Click += new System.EventHandler(this.TicketsMGRBtn_Click);
-            // 
-            // RoutesMGRBtn
-            // 
-            this.RoutesMGRBtn.Animated = true;
-            this.RoutesMGRBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RoutesMGRBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.RoutesMGRBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.RoutesMGRBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.RoutesMGRBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.RoutesMGRBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.RoutesMGRBtn.FillColor = System.Drawing.Color.Transparent;
-            this.RoutesMGRBtn.FillColor2 = System.Drawing.Color.Transparent;
-            this.RoutesMGRBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RoutesMGRBtn.ForeColor = System.Drawing.Color.White;
-            this.RoutesMGRBtn.HoverState.FillColor = System.Drawing.Color.White;
-            this.RoutesMGRBtn.HoverState.FillColor2 = System.Drawing.Color.White;
-            this.RoutesMGRBtn.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.RoutesMGRBtn.Location = new System.Drawing.Point(32, 199);
-            this.RoutesMGRBtn.Name = "RoutesMGRBtn";
-            this.RoutesMGRBtn.Size = new System.Drawing.Size(148, 26);
-            this.RoutesMGRBtn.TabIndex = 8;
-            this.RoutesMGRBtn.Text = "Routes Manager";
-            this.RoutesMGRBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.RoutesMGRBtn.Click += new System.EventHandler(this.RoutesMGRBtn_Click);
-            // 
-            // TrainsMgrBtn
-            // 
-            this.TrainsMgrBtn.Animated = true;
-            this.TrainsMgrBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TrainsMgrBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.TrainsMgrBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.TrainsMgrBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.TrainsMgrBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.TrainsMgrBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.TrainsMgrBtn.FillColor = System.Drawing.Color.Transparent;
-            this.TrainsMgrBtn.FillColor2 = System.Drawing.Color.Transparent;
-            this.TrainsMgrBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TrainsMgrBtn.ForeColor = System.Drawing.Color.White;
-            this.TrainsMgrBtn.HoverState.FillColor = System.Drawing.Color.White;
-            this.TrainsMgrBtn.HoverState.FillColor2 = System.Drawing.Color.White;
-            this.TrainsMgrBtn.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.TrainsMgrBtn.Location = new System.Drawing.Point(32, 167);
-            this.TrainsMgrBtn.Name = "TrainsMgrBtn";
-            this.TrainsMgrBtn.Size = new System.Drawing.Size(148, 26);
-            this.TrainsMgrBtn.TabIndex = 6;
-            this.TrainsMgrBtn.Text = "Trains Manager";
-            this.TrainsMgrBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TrainsMgrBtn.Click += new System.EventHandler(this.TrainsMgrBtn_Click);
-            // 
-            // ExitBTN
-            // 
-            this.ExitBTN.Animated = true;
-            this.ExitBTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.ExitBTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.ExitBTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ExitBTN.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ExitBTN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.ExitBTN.FillColor = System.Drawing.Color.White;
-            this.ExitBTN.FillColor2 = System.Drawing.Color.White;
-            this.ExitBTN.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ExitBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ExitBTN.IndicateFocus = true;
-            this.ExitBTN.Location = new System.Drawing.Point(12, 523);
-            this.ExitBTN.Name = "ExitBTN";
-            this.ExitBTN.Size = new System.Drawing.Size(127, 31);
-            this.ExitBTN.TabIndex = 4;
-            this.ExitBTN.Text = "EXIT";
-            this.ExitBTN.Click += new System.EventHandler(this.ExitBTN_Click);
+            this.PassengerMGRPic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.PassengerMGRPic, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.PassengerMGRPic.FillColor = System.Drawing.Color.Transparent;
+            this.PassengerMGRPic.Image = global::testing.Properties.Resources.bluePassenger1;
+            this.PassengerMGRPic.ImageRotate = 0F;
+            this.PassengerMGRPic.Location = new System.Drawing.Point(122, 295);
+            this.PassengerMGRPic.Name = "PassengerMGRPic";
+            this.PassengerMGRPic.Size = new System.Drawing.Size(38, 26);
+            this.PassengerMGRPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PassengerMGRPic.TabIndex = 16;
+            this.PassengerMGRPic.TabStop = false;
+            this.PassengerMGRPic.UseTransparentBackground = true;
             // 
             // PassengerMGRBtn
             // 
             this.PassengerMGRBtn.Animated = true;
             this.PassengerMGRBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.PassengerMGRBtn, Guna.UI2.AnimatorNS.DecorationType.None);
             this.PassengerMGRBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.PassengerMGRBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.PassengerMGRBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -270,6 +150,233 @@
             this.PassengerMGRBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.PassengerMGRBtn.Click += new System.EventHandler(this.guna2GradientTileButton2_Click);
             // 
+            // guna2GradientTileButton1
+            // 
+            this.guna2GradientTileButton1.Animated = true;
+            this.guna2GradientTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.guna2GradientTileButton1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2GradientTileButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientTileButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientTileButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientTileButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientTileButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientTileButton1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientTileButton1.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientTileButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientTileButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientTileButton1.HoverState.FillColor = System.Drawing.Color.White;
+            this.guna2GradientTileButton1.HoverState.FillColor2 = System.Drawing.Color.White;
+            this.guna2GradientTileButton1.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.guna2GradientTileButton1.Location = new System.Drawing.Point(32, 491);
+            this.guna2GradientTileButton1.Name = "guna2GradientTileButton1";
+            this.guna2GradientTileButton1.Size = new System.Drawing.Size(148, 26);
+            this.guna2GradientTileButton1.TabIndex = 14;
+            this.guna2GradientTileButton1.Text = "Passengers Manager";
+            this.guna2GradientTileButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientTileButton1.Click += new System.EventHandler(this.guna2GradientTileButton1_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.guna2PictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2PictureBox1.Image = global::testing.Properties.Resources.logout_removebg_preview;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 491);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(38, 26);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 13;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // CancellationMGRBtn
+            // 
+            this.CancellationMGRBtn.Animated = true;
+            this.CancellationMGRBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.CancellationMGRBtn, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.CancellationMGRBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.CancellationMGRBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.CancellationMGRBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.CancellationMGRBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.CancellationMGRBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.CancellationMGRBtn.FillColor = System.Drawing.Color.Transparent;
+            this.CancellationMGRBtn.FillColor2 = System.Drawing.Color.Transparent;
+            this.CancellationMGRBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancellationMGRBtn.ForeColor = System.Drawing.Color.White;
+            this.CancellationMGRBtn.HoverState.FillColor = System.Drawing.Color.White;
+            this.CancellationMGRBtn.HoverState.FillColor2 = System.Drawing.Color.White;
+            this.CancellationMGRBtn.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CancellationMGRBtn.Location = new System.Drawing.Point(32, 263);
+            this.CancellationMGRBtn.Name = "CancellationMGRBtn";
+            this.CancellationMGRBtn.Size = new System.Drawing.Size(148, 26);
+            this.CancellationMGRBtn.TabIndex = 12;
+            this.CancellationMGRBtn.Text = "Cancellations";
+            this.CancellationMGRBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.CancellationMGRBtn.Click += new System.EventHandler(this.CancellationMGRBtn_Click);
+            // 
+            // CancellationMGRPic
+            // 
+            this.CancellationMGRPic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.CancellationMGRPic, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.CancellationMGRPic.Image = global::testing.Properties.Resources.image_2024_05_01_135359567_removebg_preview;
+            this.CancellationMGRPic.ImageRotate = 0F;
+            this.CancellationMGRPic.Location = new System.Drawing.Point(0, 263);
+            this.CancellationMGRPic.Name = "CancellationMGRPic";
+            this.CancellationMGRPic.Size = new System.Drawing.Size(38, 26);
+            this.CancellationMGRPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CancellationMGRPic.TabIndex = 11;
+            this.CancellationMGRPic.TabStop = false;
+            this.CancellationMGRPic.Click += new System.EventHandler(this.CancellationMGRPic_Click);
+            // 
+            // TicketsMGRBtn
+            // 
+            this.TicketsMGRBtn.Animated = true;
+            this.TicketsMGRBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.TicketsMGRBtn, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TicketsMGRBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.TicketsMGRBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.TicketsMGRBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.TicketsMGRBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.TicketsMGRBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.TicketsMGRBtn.FillColor = System.Drawing.Color.Transparent;
+            this.TicketsMGRBtn.FillColor2 = System.Drawing.Color.Transparent;
+            this.TicketsMGRBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TicketsMGRBtn.ForeColor = System.Drawing.Color.White;
+            this.TicketsMGRBtn.HoverState.FillColor = System.Drawing.Color.White;
+            this.TicketsMGRBtn.HoverState.FillColor2 = System.Drawing.Color.White;
+            this.TicketsMGRBtn.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.TicketsMGRBtn.Location = new System.Drawing.Point(32, 231);
+            this.TicketsMGRBtn.Name = "TicketsMGRBtn";
+            this.TicketsMGRBtn.Size = new System.Drawing.Size(148, 26);
+            this.TicketsMGRBtn.TabIndex = 10;
+            this.TicketsMGRBtn.Text = "Tickets Manager";
+            this.TicketsMGRBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TicketsMGRBtn.Click += new System.EventHandler(this.TicketsMGRBtn_Click);
+            // 
+            // TicketsMGRPic
+            // 
+            this.TicketsMGRPic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.TicketsMGRPic, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TicketsMGRPic.Image = global::testing.Properties.Resources.image_2024_05_01_134354312_removebg_preview;
+            this.TicketsMGRPic.ImageRotate = 0F;
+            this.TicketsMGRPic.Location = new System.Drawing.Point(0, 231);
+            this.TicketsMGRPic.Name = "TicketsMGRPic";
+            this.TicketsMGRPic.Size = new System.Drawing.Size(38, 26);
+            this.TicketsMGRPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.TicketsMGRPic.TabIndex = 9;
+            this.TicketsMGRPic.TabStop = false;
+            this.TicketsMGRPic.Click += new System.EventHandler(this.TicketsMGRPic_Click);
+            // 
+            // RoutesMGRBtn
+            // 
+            this.RoutesMGRBtn.Animated = true;
+            this.RoutesMGRBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.RoutesMGRBtn, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.RoutesMGRBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.RoutesMGRBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.RoutesMGRBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.RoutesMGRBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.RoutesMGRBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.RoutesMGRBtn.FillColor = System.Drawing.Color.Transparent;
+            this.RoutesMGRBtn.FillColor2 = System.Drawing.Color.Transparent;
+            this.RoutesMGRBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RoutesMGRBtn.ForeColor = System.Drawing.Color.White;
+            this.RoutesMGRBtn.HoverState.FillColor = System.Drawing.Color.White;
+            this.RoutesMGRBtn.HoverState.FillColor2 = System.Drawing.Color.White;
+            this.RoutesMGRBtn.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.RoutesMGRBtn.Location = new System.Drawing.Point(32, 199);
+            this.RoutesMGRBtn.Name = "RoutesMGRBtn";
+            this.RoutesMGRBtn.Size = new System.Drawing.Size(148, 26);
+            this.RoutesMGRBtn.TabIndex = 8;
+            this.RoutesMGRBtn.Text = "Routes Manager";
+            this.RoutesMGRBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.RoutesMGRBtn.Click += new System.EventHandler(this.RoutesMGRBtn_Click);
+            // 
+            // RoutesMGRPic
+            // 
+            this.RoutesMGRPic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.RoutesMGRPic, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.RoutesMGRPic.Image = global::testing.Properties.Resources.image_2024_05_01_133125829_removebg_preview;
+            this.RoutesMGRPic.ImageRotate = 0F;
+            this.RoutesMGRPic.Location = new System.Drawing.Point(0, 199);
+            this.RoutesMGRPic.Name = "RoutesMGRPic";
+            this.RoutesMGRPic.Size = new System.Drawing.Size(38, 26);
+            this.RoutesMGRPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.RoutesMGRPic.TabIndex = 7;
+            this.RoutesMGRPic.TabStop = false;
+            this.RoutesMGRPic.Click += new System.EventHandler(this.RoutesMGRPic_Click);
+            // 
+            // TrainsMgrBtn
+            // 
+            this.TrainsMgrBtn.Animated = true;
+            this.TrainsMgrBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.TrainsMgrBtn, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TrainsMgrBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.TrainsMgrBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.TrainsMgrBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.TrainsMgrBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.TrainsMgrBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.TrainsMgrBtn.FillColor = System.Drawing.Color.Transparent;
+            this.TrainsMgrBtn.FillColor2 = System.Drawing.Color.Transparent;
+            this.TrainsMgrBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TrainsMgrBtn.ForeColor = System.Drawing.Color.White;
+            this.TrainsMgrBtn.HoverState.FillColor = System.Drawing.Color.White;
+            this.TrainsMgrBtn.HoverState.FillColor2 = System.Drawing.Color.White;
+            this.TrainsMgrBtn.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.TrainsMgrBtn.Location = new System.Drawing.Point(32, 167);
+            this.TrainsMgrBtn.Name = "TrainsMgrBtn";
+            this.TrainsMgrBtn.Size = new System.Drawing.Size(148, 26);
+            this.TrainsMgrBtn.TabIndex = 6;
+            this.TrainsMgrBtn.Text = "Trains Manager";
+            this.TrainsMgrBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TrainsMgrBtn.Click += new System.EventHandler(this.TrainsMgrBtn_Click);
+            // 
+            // TrainsMgrPic
+            // 
+            this.TrainsMgrPic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.TrainsMgrPic, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.TrainsMgrPic.Image = global::testing.Properties.Resources.image_2024_05_01_130640974_removebg_preview;
+            this.TrainsMgrPic.ImageRotate = 0F;
+            this.TrainsMgrPic.Location = new System.Drawing.Point(0, 167);
+            this.TrainsMgrPic.Name = "TrainsMgrPic";
+            this.TrainsMgrPic.Size = new System.Drawing.Size(38, 26);
+            this.TrainsMgrPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.TrainsMgrPic.TabIndex = 5;
+            this.TrainsMgrPic.TabStop = false;
+            this.TrainsMgrPic.Click += new System.EventHandler(this.guna2PictureBox1_Click);
+            // 
+            // ExitBTN
+            // 
+            this.ExitBTN.Animated = true;
+            this.guna2Transition1.SetDecoration(this.ExitBTN, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.ExitBTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ExitBTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ExitBTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ExitBTN.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ExitBTN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ExitBTN.FillColor = System.Drawing.Color.White;
+            this.ExitBTN.FillColor2 = System.Drawing.Color.White;
+            this.ExitBTN.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ExitBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ExitBTN.IndicateFocus = true;
+            this.ExitBTN.Location = new System.Drawing.Point(12, 523);
+            this.ExitBTN.Name = "ExitBTN";
+            this.ExitBTN.Size = new System.Drawing.Size(127, 31);
+            this.ExitBTN.TabIndex = 4;
+            this.ExitBTN.Text = "EXIT";
+            this.ExitBTN.Click += new System.EventHandler(this.ExitBTN_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.pictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.pictureBox1.Image = global::testing.Properties.Resources.uetrailwayslogo;
+            this.pictureBox1.Location = new System.Drawing.Point(-20, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 125);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // guna2DataGridView1
             // 
             this.guna2DataGridView1.AllowUserToAddRows = false;
@@ -287,6 +394,7 @@
             this.guna2DataGridView1.ColumnHeadersHeight = 16;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.guna2DataGridView1, Guna.UI2.AnimatorNS.DecorationType.None);
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -328,6 +436,7 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(174)))), ((int)(((byte)(222)))));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(459, 345);
@@ -342,6 +451,7 @@
             this.DeletePassengerBTN.AutoRoundedCorners = true;
             this.DeletePassengerBTN.BorderRadius = 15;
             this.DeletePassengerBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.DeletePassengerBTN, Guna.UI2.AnimatorNS.DecorationType.None);
             this.DeletePassengerBTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.DeletePassengerBTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.DeletePassengerBTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -370,6 +480,7 @@
             this.UpdatePassengerBtn.AutoRoundedCorners = true;
             this.UpdatePassengerBtn.BorderRadius = 15;
             this.UpdatePassengerBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.UpdatePassengerBtn, Guna.UI2.AnimatorNS.DecorationType.None);
             this.UpdatePassengerBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.UpdatePassengerBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.UpdatePassengerBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -398,6 +509,7 @@
             this.addPassengerBTN.AutoRoundedCorners = true;
             this.addPassengerBTN.BorderRadius = 15;
             this.addPassengerBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.addPassengerBTN, Guna.UI2.AnimatorNS.DecorationType.None);
             this.addPassengerBTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.addPassengerBTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.addPassengerBTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -423,6 +535,7 @@
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel4, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(143)))), ((int)(((byte)(211)))));
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(185, 334);
@@ -439,6 +552,7 @@
             this.FemaleRDIOBTN.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.FemaleRDIOBTN.CheckedState.InnerColor = System.Drawing.Color.White;
             this.FemaleRDIOBTN.CheckedState.InnerOffset = -4;
+            this.guna2Transition1.SetDecoration(this.FemaleRDIOBTN, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FemaleRDIOBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.FemaleRDIOBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(143)))), ((int)(((byte)(211)))));
             this.FemaleRDIOBTN.Location = new System.Drawing.Point(378, 334);
@@ -459,6 +573,7 @@
             this.MalerdioBTN.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.MalerdioBTN.CheckedState.InnerColor = System.Drawing.Color.White;
             this.MalerdioBTN.CheckedState.InnerOffset = -4;
+            this.guna2Transition1.SetDecoration(this.MalerdioBTN, Guna.UI2.AnimatorNS.DecorationType.None);
             this.MalerdioBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.MalerdioBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(143)))), ((int)(((byte)(211)))));
             this.MalerdioBTN.Location = new System.Drawing.Point(301, 334);
@@ -475,6 +590,7 @@
             // 
             this.PassengerMailTXT.BorderThickness = 0;
             this.PassengerMailTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2Transition1.SetDecoration(this.PassengerMailTXT, Guna.UI2.AnimatorNS.DecorationType.None);
             this.PassengerMailTXT.DefaultText = "";
             this.PassengerMailTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.PassengerMailTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -497,6 +613,7 @@
             // 
             this.guna2CustomGradientPanel4.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.guna2CustomGradientPanel4.CustomizableEdges.BottomLeft = false;
+            this.guna2Transition1.SetDecoration(this.guna2CustomGradientPanel4, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2CustomGradientPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
             this.guna2CustomGradientPanel4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
             this.guna2CustomGradientPanel4.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(174)))), ((int)(((byte)(222)))));
@@ -510,6 +627,7 @@
             // 
             this.PassengerNaeTX.BorderThickness = 0;
             this.PassengerNaeTX.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2Transition1.SetDecoration(this.PassengerNaeTX, Guna.UI2.AnimatorNS.DecorationType.None);
             this.PassengerNaeTX.DefaultText = "";
             this.PassengerNaeTX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.PassengerNaeTX.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -532,6 +650,7 @@
             // 
             this.guna2CustomGradientPanel3.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.guna2CustomGradientPanel3.CustomizableEdges.BottomLeft = false;
+            this.guna2Transition1.SetDecoration(this.guna2CustomGradientPanel3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2CustomGradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
             this.guna2CustomGradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
             this.guna2CustomGradientPanel3.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(174)))), ((int)(((byte)(222)))));
@@ -545,6 +664,7 @@
             // 
             this.guna2CustomGradientPanel2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.guna2CustomGradientPanel2.CustomizableEdges.BottomLeft = false;
+            this.guna2Transition1.SetDecoration(this.guna2CustomGradientPanel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2CustomGradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
             this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
             this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(174)))), ((int)(((byte)(222)))));
@@ -557,6 +677,7 @@
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(174)))), ((int)(((byte)(222)))));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(224, 11);
@@ -569,6 +690,7 @@
             // 
             this.PassengerPasswordTXT.BorderThickness = 0;
             this.PassengerPasswordTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2Transition1.SetDecoration(this.PassengerPasswordTXT, Guna.UI2.AnimatorNS.DecorationType.None);
             this.PassengerPasswordTXT.DefaultText = "";
             this.PassengerPasswordTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.PassengerPasswordTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -592,6 +714,7 @@
             // 
             this.guna2CustomGradientPanel5.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.guna2CustomGradientPanel5.CustomizableEdges.BottomLeft = false;
+            this.guna2Transition1.SetDecoration(this.guna2CustomGradientPanel5, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2CustomGradientPanel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
             this.guna2CustomGradientPanel5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
             this.guna2CustomGradientPanel5.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(174)))), ((int)(((byte)(222)))));
@@ -605,6 +728,7 @@
             // 
             this.PassengerAddressTxt.BorderThickness = 0;
             this.PassengerAddressTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2Transition1.SetDecoration(this.PassengerAddressTxt, Guna.UI2.AnimatorNS.DecorationType.None);
             this.PassengerAddressTxt.DefaultText = "";
             this.PassengerAddressTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.PassengerAddressTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -627,6 +751,7 @@
             // 
             this.guna2CustomGradientPanel6.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.guna2CustomGradientPanel6.CustomizableEdges.BottomLeft = false;
+            this.guna2Transition1.SetDecoration(this.guna2CustomGradientPanel6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2CustomGradientPanel6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
             this.guna2CustomGradientPanel6.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
             this.guna2CustomGradientPanel6.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(174)))), ((int)(((byte)(222)))));
@@ -640,6 +765,7 @@
             // 
             this.PassengerPhoneTXT.BorderThickness = 0;
             this.PassengerPhoneTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2Transition1.SetDecoration(this.PassengerPhoneTXT, Guna.UI2.AnimatorNS.DecorationType.None);
             this.PassengerPhoneTXT.DefaultText = "";
             this.PassengerPhoneTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.PassengerPhoneTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -662,6 +788,7 @@
             // 
             this.guna2CustomGradientPanel7.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.guna2CustomGradientPanel7.CustomizableEdges.BottomLeft = false;
+            this.guna2Transition1.SetDecoration(this.guna2CustomGradientPanel7, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2CustomGradientPanel7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
             this.guna2CustomGradientPanel7.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
             this.guna2CustomGradientPanel7.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(174)))), ((int)(((byte)(222)))));
@@ -675,6 +802,7 @@
             // 
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.guna2PictureBox2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Image = global::testing.Properties.Resources.bluePassenger1;
             this.guna2PictureBox2.ImageRotate = 0F;
@@ -686,94 +814,25 @@
             this.guna2PictureBox2.TabStop = false;
             this.guna2PictureBox2.UseTransparentBackground = true;
             // 
-            // PassengerMGRPic
+            // guna2Transition1
             // 
-            this.PassengerMGRPic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PassengerMGRPic.FillColor = System.Drawing.Color.Transparent;
-            this.PassengerMGRPic.Image = global::testing.Properties.Resources.bluePassenger1;
-            this.PassengerMGRPic.ImageRotate = 0F;
-            this.PassengerMGRPic.Location = new System.Drawing.Point(122, 295);
-            this.PassengerMGRPic.Name = "PassengerMGRPic";
-            this.PassengerMGRPic.Size = new System.Drawing.Size(38, 26);
-            this.PassengerMGRPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PassengerMGRPic.TabIndex = 16;
-            this.PassengerMGRPic.TabStop = false;
-            this.PassengerMGRPic.UseTransparentBackground = true;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2PictureBox1.Image = global::testing.Properties.Resources.logout_removebg_preview;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 491);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(38, 26);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 13;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // CancellationMGRPic
-            // 
-            this.CancellationMGRPic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CancellationMGRPic.Image = global::testing.Properties.Resources.image_2024_05_01_135359567_removebg_preview;
-            this.CancellationMGRPic.ImageRotate = 0F;
-            this.CancellationMGRPic.Location = new System.Drawing.Point(0, 263);
-            this.CancellationMGRPic.Name = "CancellationMGRPic";
-            this.CancellationMGRPic.Size = new System.Drawing.Size(38, 26);
-            this.CancellationMGRPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CancellationMGRPic.TabIndex = 11;
-            this.CancellationMGRPic.TabStop = false;
-            this.CancellationMGRPic.Click += new System.EventHandler(this.CancellationMGRPic_Click);
-            // 
-            // TicketsMGRPic
-            // 
-            this.TicketsMGRPic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TicketsMGRPic.Image = global::testing.Properties.Resources.image_2024_05_01_134354312_removebg_preview;
-            this.TicketsMGRPic.ImageRotate = 0F;
-            this.TicketsMGRPic.Location = new System.Drawing.Point(0, 231);
-            this.TicketsMGRPic.Name = "TicketsMGRPic";
-            this.TicketsMGRPic.Size = new System.Drawing.Size(38, 26);
-            this.TicketsMGRPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.TicketsMGRPic.TabIndex = 9;
-            this.TicketsMGRPic.TabStop = false;
-            this.TicketsMGRPic.Click += new System.EventHandler(this.TicketsMGRPic_Click);
-            // 
-            // RoutesMGRPic
-            // 
-            this.RoutesMGRPic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RoutesMGRPic.Image = global::testing.Properties.Resources.image_2024_05_01_133125829_removebg_preview;
-            this.RoutesMGRPic.ImageRotate = 0F;
-            this.RoutesMGRPic.Location = new System.Drawing.Point(0, 199);
-            this.RoutesMGRPic.Name = "RoutesMGRPic";
-            this.RoutesMGRPic.Size = new System.Drawing.Size(38, 26);
-            this.RoutesMGRPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.RoutesMGRPic.TabIndex = 7;
-            this.RoutesMGRPic.TabStop = false;
-            this.RoutesMGRPic.Click += new System.EventHandler(this.RoutesMGRPic_Click);
-            // 
-            // TrainsMgrPic
-            // 
-            this.TrainsMgrPic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TrainsMgrPic.Image = global::testing.Properties.Resources.image_2024_05_01_130640974_removebg_preview;
-            this.TrainsMgrPic.ImageRotate = 0F;
-            this.TrainsMgrPic.Location = new System.Drawing.Point(0, 167);
-            this.TrainsMgrPic.Name = "TrainsMgrPic";
-            this.TrainsMgrPic.Size = new System.Drawing.Size(38, 26);
-            this.TrainsMgrPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.TrainsMgrPic.TabIndex = 5;
-            this.TrainsMgrPic.TabStop = false;
-            this.TrainsMgrPic.Click += new System.EventHandler(this.guna2PictureBox1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::testing.Properties.Resources.uetrailwayslogo;
-            this.pictureBox1.Location = new System.Drawing.Point(-20, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 125);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.guna2Transition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
             // 
             // PassengerManager
             // 
@@ -803,14 +862,13 @@
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.guna2CustomGradientPanel1);
+            this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PassengerManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "adminMainform";
             this.Load += new System.EventHandler(this.adminMainform_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PassengerMGRPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CancellationMGRPic)).EndInit();
@@ -818,6 +876,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.RoutesMGRPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TrainsMgrPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -861,5 +921,6 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel6;
         private Guna.UI2.WinForms.Guna2TextBox PassengerPhoneTXT;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel7;
+        private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
     }
 }

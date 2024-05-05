@@ -146,18 +146,18 @@ namespace testing
         private void SearchRoutesBTN_Click(object sender, EventArgs e)
         {
             //open search rooutes fomr
-            //searchRoutesform sr= new searchRoutesform();
-            //sr.show();
-            //this.close();
+            searchRoutes sr= new searchRoutes();
+            sr.Show();
+            this.Close();
 
         }
 
         private void BookTicketBTN_Click(object sender, EventArgs e)
         {
             //open book tickets form
-            //bookTickets bt = new bookTickets();
-            //bt.show();
-            //this.close();
+            bookTicket bt = new bookTicket();
+            bt.Show();
+            this.Close();
 
         }
 
@@ -203,6 +203,15 @@ namespace testing
             //accountSettings as = new accountSettings();
             //as.show();
             //this.close();
+
+        }
+
+        private void searchroutesticket_Click(object sender, EventArgs e)
+        {
+            //open search routes form
+            searchRoutes sr = new searchRoutes();
+            sr.Show();
+            this.Close();
 
         }
     }

@@ -226,6 +226,7 @@
             this.searchroutesticket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.searchroutesticket.TabIndex = 7;
             this.searchroutesticket.TabStop = false;
+            this.searchroutesticket.Click += new System.EventHandler(this.searchroutesticket_Click);
             // 
             // myaccountBTN
             // 
