@@ -198,9 +198,9 @@ namespace testing
         private void CancelticketsBTN_Click(object sender, EventArgs e)
         {
             //open cancel tickets form
-            //cancelTickets ct = new cancelTickets();
-            //ct.show();
-            //this.close();
+            cancelTicket ct = new cancelTicket();
+            ct.Show();
+            this.Close();
         }
 
         private void cancellationBTN_Click(object sender, EventArgs e)
@@ -211,18 +211,18 @@ namespace testing
         private void guna2GradientTileButton3_Click(object sender, EventArgs e)
         {
             //open history form
-            //history h = new history();
-            //h.show();
-            //this.close();
+            myHistory h = new myHistory();
+            h.Show();
+            this.Close();
 
         }
 
         private void guna2PictureBox4_Click(object sender, EventArgs e)
         {
             //open history form
-            //history h = new history();
-            //h.show();
-            //this.close();
+            myHistory h = new myHistory();
+            h.Show();
+            this.Close();
 
         }
 

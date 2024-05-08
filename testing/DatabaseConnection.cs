@@ -6,7 +6,7 @@ namespace testing
     {
         public SqlConnection getConnection()
         {
-            string connectionString = "Data Source=DESKTOP-MDFVLLC\\SQLEXPRESS;Initial Catalog=RailwayMS;Integrated Security=True;Encrypt=False";
+            string connectionString = "Data Source=DESKTOP-MDFVLLC\\SQLEXPRESS;Initial Catalog=RailwayMS;Integrated Security=True;Encrypt=False;MultipleActiveResultSets=true;";
             SqlConnection connection = new SqlConnection(connectionString);
             return connection;
         }

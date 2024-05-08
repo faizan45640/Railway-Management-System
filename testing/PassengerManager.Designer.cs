@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            Guna.UI2.AnimatorNS.Animation animation3 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PassengerManager));
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.PassengerMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PassengerMGRBtn = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.guna2GradientTileButton1 = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.Lo = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.CancellationMGRBtn = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.CancellationMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -70,6 +70,8 @@
             this.guna2CustomGradientPanel7 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
+            this.guna2GradientTileButton3 = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PassengerMGRPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -80,14 +82,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CustomGradientPanel1
             // 
             this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2GradientTileButton3);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox4);
             this.guna2CustomGradientPanel1.Controls.Add(this.PassengerMGRPic);
             this.guna2CustomGradientPanel1.Controls.Add(this.PassengerMGRBtn);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2GradientTileButton1);
+            this.guna2CustomGradientPanel1.Controls.Add(this.Lo);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox1);
             this.guna2CustomGradientPanel1.Controls.Add(this.CancellationMGRBtn);
             this.guna2CustomGradientPanel1.Controls.Add(this.CancellationMGRPic);
@@ -150,30 +155,30 @@
             this.PassengerMGRBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.PassengerMGRBtn.Click += new System.EventHandler(this.guna2GradientTileButton2_Click);
             // 
-            // guna2GradientTileButton1
+            // Lo
             // 
-            this.guna2GradientTileButton1.Animated = true;
-            this.guna2GradientTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Transition1.SetDecoration(this.guna2GradientTileButton1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2GradientTileButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientTileButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientTileButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientTileButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientTileButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientTileButton1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GradientTileButton1.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2GradientTileButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientTileButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientTileButton1.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2GradientTileButton1.HoverState.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientTileButton1.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.guna2GradientTileButton1.Location = new System.Drawing.Point(32, 491);
-            this.guna2GradientTileButton1.Name = "guna2GradientTileButton1";
-            this.guna2GradientTileButton1.Size = new System.Drawing.Size(148, 26);
-            this.guna2GradientTileButton1.TabIndex = 14;
-            this.guna2GradientTileButton1.Text = "Passengers Manager";
-            this.guna2GradientTileButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientTileButton1.Click += new System.EventHandler(this.guna2GradientTileButton1_Click);
+            this.Lo.Animated = true;
+            this.Lo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.Lo, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Lo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Lo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Lo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Lo.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Lo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Lo.FillColor = System.Drawing.Color.Transparent;
+            this.Lo.FillColor2 = System.Drawing.Color.Transparent;
+            this.Lo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.Lo.ForeColor = System.Drawing.Color.White;
+            this.Lo.HoverState.FillColor = System.Drawing.Color.White;
+            this.Lo.HoverState.FillColor2 = System.Drawing.Color.White;
+            this.Lo.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Lo.Location = new System.Drawing.Point(32, 491);
+            this.Lo.Name = "Lo";
+            this.Lo.Size = new System.Drawing.Size(148, 26);
+            this.Lo.TabIndex = 14;
+            this.Lo.Text = "Log Out";
+            this.Lo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Lo.Click += new System.EventHandler(this.guna2GradientTileButton1_Click);
             // 
             // guna2PictureBox1
             // 
@@ -381,28 +386,28 @@
             // 
             this.guna2DataGridView1.AllowUserToAddRows = false;
             this.guna2DataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.guna2DataGridView1.ColumnHeadersHeight = 16;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Transition1.SetDecoration(this.guna2DataGridView1, Guna.UI2.AnimatorNS.DecorationType.None);
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
             this.guna2DataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(185, 384);
@@ -817,22 +822,62 @@
             // guna2Transition1
             // 
             this.guna2Transition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation1;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation3;
+            // 
+            // guna2GradientTileButton3
+            // 
+            this.guna2GradientTileButton3.Animated = true;
+            this.guna2GradientTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.guna2GradientTileButton3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2GradientTileButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientTileButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientTileButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientTileButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientTileButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientTileButton3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientTileButton3.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientTileButton3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientTileButton3.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientTileButton3.HoverState.FillColor = System.Drawing.Color.White;
+            this.guna2GradientTileButton3.HoverState.FillColor2 = System.Drawing.Color.White;
+            this.guna2GradientTileButton3.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.guna2GradientTileButton3.Location = new System.Drawing.Point(32, 459);
+            this.guna2GradientTileButton3.Name = "guna2GradientTileButton3";
+            this.guna2GradientTileButton3.Size = new System.Drawing.Size(148, 26);
+            this.guna2GradientTileButton3.TabIndex = 68;
+            this.guna2GradientTileButton3.Text = "Audit Logs ";
+            this.guna2GradientTileButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientTileButton3.Click += new System.EventHandler(this.guna2GradientTileButton3_Click);
+            // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.guna2PictureBox4, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2PictureBox4.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox4.Image = global::testing.Properties.Resources.historywith_bg_removebg_preview;
+            this.guna2PictureBox4.ImageRotate = 0F;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(-10, 459);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.Size = new System.Drawing.Size(58, 26);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox4.TabIndex = 67;
+            this.guna2PictureBox4.TabStop = false;
+            this.guna2PictureBox4.Click += new System.EventHandler(this.guna2PictureBox4_Click);
             // 
             // PassengerManager
             // 
@@ -878,6 +923,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -896,7 +942,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox TicketsMGRPic;
         private Guna.UI2.WinForms.Guna2GradientTileButton RoutesMGRBtn;
         private Guna.UI2.WinForms.Guna2PictureBox RoutesMGRPic;
-        private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton1;
+        private Guna.UI2.WinForms.Guna2GradientTileButton Lo;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2GradientTileButton PassengerMGRBtn;
         private Guna.UI2.WinForms.Guna2PictureBox PassengerMGRPic;
@@ -922,5 +968,7 @@
         private Guna.UI2.WinForms.Guna2TextBox PassengerPhoneTXT;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel7;
         private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
+        private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton3;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
     }
 }

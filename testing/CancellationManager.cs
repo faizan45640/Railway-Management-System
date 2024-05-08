@@ -240,5 +240,18 @@ namespace testing
           
 
         }
+
+        private void guna2GradientTileButton3_Click(object sender, EventArgs e)
+        {
+            auditLog auditLog = new auditLog();
+            auditLog.Show();
+            this.Close();
+
+        }
+
+        private void guna2PictureBox4_Click(object sender, EventArgs e)
+        {
+            guna2GradientTileButton3_Click(sender, e);
+        }
     }
 }

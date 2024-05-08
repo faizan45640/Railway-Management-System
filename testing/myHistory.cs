@@ -1,43 +1,68 @@
 ﻿using System;
-using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Collections.Specialized;
+using System.Data;
+using System.Windows.Forms;
 
 namespace testing
 {
-    public partial class bookTicket : Form
+    public partial class myHistory : Form
     {
-        public int userLoggedInid = -1;
-        public bookTicket()
+        
+        public myHistory()
         {
+
             
             InitializeComponent();
-            fillrouteidcombo();
-        }
-
-
-
-        public bookTicket(string id)
-        {
-            
-            
-            
-            InitializeComponent();
-            routeIDcombo.Items.Add(id);
-            routeIDcombo.SelectedIndex = 0;
-
-
-            
-        }
-        public void fillrouteidcombo(string id)
-        {
-            
-
-        }
+            populatecancelledtickets();
+            populateActiveTickets();
+                }
+       
         private void adminMainform_Load(object sender, EventArgs e)
         {
         }
 
+        private void populateActiveTickets()
+        {
+            //populate the datagridview with data
+            SqlConnection conn = new DatabaseConnection().getConnection();
+            conn.Open();
+            //prepare query
+            string query = "Select Reservation.id AS [T ID], Passenger.username AS [Passenger Name] , Train.name AS [Train Name] , Route.source AS Source , Route.destination AS Destination , Route.date AS Date, Route.cost AS Cost From Reservation INNER JOIN Passenger ON passengerID=Passenger.id INNER JOIN Route ON routeID=Route.id INNER JOIN Train ON Route.trainid=Train.id WHERE Reservation.Status='Active' AND Passenger.id = " + loggedinUserdetail.loggedinUserID;
+            //prepare command
+            SqlCommand cmd = new SqlCommand(query, conn);
+            //create adapter
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            //create a datatable
+            DataSet dataSet = new DataSet();
+            //fill the datatable
+            da.Fill(dataSet, "Route");
+            //set the datasource of the datagridview
+            datagridviewactivetickets.DataSource = dataSet.Tables["Route"];
+            //close connection
+            conn.Close();
+        }
+       
+            private void populatecancelledtickets()
+            {
+                //populate the datagridview with data
+                SqlConnection conn = new DatabaseConnection().getConnection();
+                conn.Open();
+                //prepare query
+                string query = "Select Reservation.id AS [T ID], Passenger.username AS [Passenger Name] , Train.name AS [Train Name] , Route.source AS Source , Route.destination AS Destination , Route.date AS Date, Route.cost AS Cost From Reservation INNER JOIN Passenger ON passengerID=Passenger.id INNER JOIN Route ON routeID=Route.id INNER JOIN Train ON Route.trainid=Train.id WHERE Reservation.Status='Cancelled' AND Passenger.id = " + loggedinUserdetail.loggedinUserID;
+                //prepare command
+                SqlCommand cmd = new SqlCommand(query, conn);
+                //create adapter
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                //create a datatable
+                DataSet dataSet = new DataSet();
+                //fill the datatable
+                da.Fill(dataSet, "Route");
+                //set the datasource of the datagridview
+                cancelledTickets.DataSource = dataSet.Tables["Route"];
+                //close connection
+                conn.Close();
+            }
+        
         private void ExitBTN_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -177,9 +202,9 @@ namespace testing
         private void BookTicketBTN_Click(object sender, EventArgs e)
         {
             //open book tickets form
-            //bookTickets bt = new bookTickets();
-            //bt.show();
-            //this.close();
+            bookTicket bt = new bookTicket();
+            bt.Show();
+            this.Close();
 
         }
 
@@ -204,18 +229,18 @@ namespace testing
         private void guna2GradientTileButton3_Click(object sender, EventArgs e)
         {
             //open history form
-            myHistory h = new myHistory();
-            h.Show();
-            this.Close();
+            //history h = new history();
+            //h.show();
+            //this.close();
 
         }
 
         private void guna2PictureBox4_Click(object sender, EventArgs e)
         {
             //open history form
-            myHistory h = new myHistory();
-            h.Show();
-            this.Close();
+            //history h = new history();
+            //h.show();
+            //this.close();
 
         }
 
@@ -237,112 +262,15 @@ namespace testing
 
         }
 
-        private void fillrouteidcombo()
+        private void datagridviewactivetickets_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           //connect to database
-            //fill route id combo box
-           SqlConnection conn = new DatabaseConnection().getConnection();
+            //store id of the clicked row
+            string id= datagridviewactivetickets.Rows[e.RowIndex].Cells[0].Value.ToString();
+            //open cancellation form
+            cancelTicket ct = new cancelTicket(id);
+            ct.Show();
+            this.Close();
 
-            conn.Open();
-            
-            SqlCommand cmd = new SqlCommand("select id from Route", conn);
-            SqlDataReader dr = cmd.ExecuteReader();
-            while (dr.Read())
-            {
-                routeIDcombo.Items.Add(dr["id"].ToString());
-            }
-            conn.Close();
-
-
-            
-
-
-
-        }
-
-        private void routeIDcombo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //fill the textboxes with the selected route id
-            SqlConnection conn = new DatabaseConnection().getConnection();
-            int id = int.Parse(routeIDcombo.SelectedItem.ToString());
-
-
-            string query = " SELECT Route.id as ID, trainid AS[Train ID], name AS[Train Name],  source AS Source , destination as Destination , date AS Date , cost AS Cost FROM Route INNER JOIN Train ON trainid = Train.id WHERE '" + id + "'=Route.id";
-
-
-            SqlCommand cmd = new SqlCommand(query, conn);
-            conn.Open();
-            SqlDataReader dr = cmd.ExecuteReader();
-            while (dr.Read())
-            {
-                TrainIDTXT.Text = dr["Train ID"].ToString();
-                TrainNameTXT.Text = dr["Train Name"].ToString();
-                SourceTXTBox.Text = dr["Source"].ToString();
-                DestinationTXT.Text = dr["Destination"].ToString();
-                DateTXT.Text = dr["Date"].ToString();
-                CostTXT.Text = dr["Cost"].ToString();
-            }
-
-
-            conn.Close();
-        }
-
-        private void guna2HtmlLabel9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BookTicketTXT_Click(object sender, EventArgs e)
-        {
-            //book ticket
-
-            if (routeIDcombo.SelectedIndex == -1)
-            {
-                MessageBox.Show("Error: Please Select A Route");
-                return;
-            }
-
-            string i = routeIDcombo.SelectedItem.ToString();
-            
-            try
-            {
-                SqlConnection conn = new DatabaseConnection().getConnection();
-                conn.Open();
-                //check if the user has already booked this route
-
-                string query = "SELECT * FROM Reservation WHERE routeID = '" + routeIDcombo.SelectedItem.ToString() + "' AND passengerID = '" + loggedinUserdetail.loggedinUserID + "' AND status='Active'";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                SqlDataReader dr = cmd.ExecuteReader();
-                if (dr.Read())
-                {
-                    MessageBox.Show("You have already booked this route");
-                    return;
-                }
-
-
-
-
-                conn.Close();
-                conn.Open();
-                query = "INSERT INTO Reservation (routeID, passengerID, status) VALUES ('" + routeIDcombo.SelectedItem + "','" + loggedinUserdetail.loggedinUserID + "' , 'Active')";
-                SqlCommand cmd2 = new SqlCommand(query, conn);
-                cmd2.ExecuteNonQuery();
-                MessageBox.Show("Ticket Booked Successfully");
-                conn.Close();
-            }
-            catch
-            {
-                MessageBox.Show("Error Booking Ticket");
-            }
-           
-        }
-
-        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
-        {
-            //disable clicking this button
-            
-            routeIDcombo.Items.Clear();
-            fillrouteidcombo();
         }
     }
 }

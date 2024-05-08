@@ -256,9 +256,9 @@ namespace testing
         private void CancelticketsBTN_Click(object sender, EventArgs e)
         {
             //open cancel tickets form
-            //cancelTickets ct = new cancelTickets();
-            //ct.show();
-            //this.close();
+            cancelTicket ct = new cancelTicket();
+            ct.Show();
+            this.Close();
         }
 
         private void cancellationBTN_Click(object sender, EventArgs e)
@@ -269,18 +269,18 @@ namespace testing
         private void guna2GradientTileButton3_Click(object sender, EventArgs e)
         {
             //open history form
-            //history h = new history();
-            //h.show();
-            //this.close();
+            myHistory h = new myHistory();
+            h.Show();
+            this.Close();
 
         }
 
         private void guna2PictureBox4_Click(object sender, EventArgs e)
         {
             //open history form
-            //history h = new history();
-            //h.show();
-            //this.close();
+             myHistory h = new myHistory();
+            h.Show();
+            this.Close();
 
         }
 
@@ -367,5 +367,20 @@ namespace testing
         {
 
         }
+
+        private void guna2DataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //make book tickets form and pass the id in it
+            //select the id which is cliced by user
+            int index = e.RowIndex;
+            DataGridViewRow selectedRow = guna2DataGridView.Rows[index];
+            int id = int.Parse(selectedRow.Cells[0].Value.ToString());
+            //change id to string
+            string idstr = id.ToString();
+            bookTicket bt = new bookTicket(idstr);
+            bt.Show();
+            this.Close();
+        }
     }
 }
+                                      

@@ -151,6 +151,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="audtiLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="audtiLog.Designer.cs">
+      <DependentUpon>audtiLog.cs</DependentUpon>
+    </Compile>
     <Compile Include="loggedinUserdetail.cs" />
     <Compile Include="account.cs">
       <SubType>Form</SubType>
@@ -163,6 +169,18 @@
     </Compile>
     <Compile Include="bookTicket.Designer.cs">
       <DependentUpon>bookTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cancelTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cancelTicket.Designer.cs">
+      <DependentUpon>cancelTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="myHistory.Designer.cs">
+      <DependentUpon>myHistory.cs</DependentUpon>
     </Compile>
     <Compile Include="searchRoutes.cs">
       <SubType>Form</SubType>
@@ -230,8 +248,17 @@
     <EmbeddedResource Include="account.resx">
       <DependentUpon>account.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="audtiLog.resx">
+      <DependentUpon>audtiLog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="bookTicket.resx">
       <DependentUpon>bookTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cancelTicket.resx">
+      <DependentUpon>cancelTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="myHistory.resx">
+      <DependentUpon>myHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="searchRoutes.resx">
       <DependentUpon>searchRoutes.cs</DependentUpon>
@@ -363,6 +390,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\blueaccountsettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2024-05-06_142454464-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white audit trail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white_audit_trail-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history blue.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

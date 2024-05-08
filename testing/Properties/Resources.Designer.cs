@@ -143,6 +143,16 @@ namespace testing.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap history_blue {
+            get {
+                object obj = ResourceManager.GetObject("history blue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap historywith_bg_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("historywith_bg-removebg-preview", resourceCulture);
@@ -213,6 +223,16 @@ namespace testing.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image_2024_05_06_142454464_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("image_2024-05-06_142454464-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logout_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("logout-removebg-preview", resourceCulture);
@@ -276,6 +296,26 @@ namespace testing.Properties {
         internal static System.Drawing.Bitmap uetrailwayslogo {
             get {
                 object obj = ResourceManager.GetObject("uetrailwayslogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap white_audit_trail {
+            get {
+                object obj = ResourceManager.GetObject("white audit trail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap white_audit_trail_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("white_audit_trail-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

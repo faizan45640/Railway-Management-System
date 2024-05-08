@@ -160,7 +160,6 @@ namespace testing
         private void addTrainBTN_Click(object sender, EventArgs e)
         {
             //open connection
-            //SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-6QJ1R4I;Initial Catalog=TrainTicketingSystem;Integrated Security=True");
             SqlConnection conn = new DatabaseConnection().getConnection();
 
             //open connection
@@ -383,6 +382,20 @@ namespace testing
             tm.Show();
             this.Close();
 
+        }
+
+        private void guna2GradientTileButton2_Click(object sender, EventArgs e)
+        {
+            //open audit logs form
+            auditLog al = new auditLog();
+            al.Show();
+            this.Close();
+
+        }
+
+        private void guna2PictureBox3_Click(object sender, EventArgs e)
+        {
+            guna2GradientTileButton2_Click(sender, e);
         }
     }
 }

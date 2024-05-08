@@ -29,22 +29,14 @@
         private void InitializeComponent()
         {
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientTileButton3 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2GradientTileButton2 = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.CancelticketsBTN = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.cancellationBTN = new Guna.UI2.WinForms.Guna2PictureBox();
             this.SearchRoutesBTN = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.searchroutesticket = new Guna.UI2.WinForms.Guna2PictureBox();
             this.myaccountBTN = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.myaccountpic = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2GradientTileButton1 = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ExitBTN = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.routeIDcombo = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -69,7 +61,18 @@
             this.DateTXT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CustomGradientPanel8 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.BookTicketTXT = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.cancellationBTN = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.searchroutesticket = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.myaccountpic = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cancellationBTN)).BeginInit();
@@ -77,7 +80,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.myaccountpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CustomGradientPanel1
@@ -106,21 +108,6 @@
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(163, 557);
             this.guna2CustomGradientPanel1.TabIndex = 1;
             this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Image = global::testing.Properties.Resources.blue_ticket;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(122, 189);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(38, 26);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox2.TabIndex = 17;
-            this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.UseTransparentBackground = true;
             // 
             // guna2GradientTileButton3
             // 
@@ -169,19 +156,6 @@
             this.guna2GradientTileButton2.Text = "Book Tickets";
             this.guna2GradientTileButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2PictureBox4
-            // 
-            this.guna2PictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2PictureBox4.Image = global::testing.Properties.Resources.historywith_bg_removebg_preview;
-            this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(0, 253);
-            this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(38, 26);
-            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox4.TabIndex = 21;
-            this.guna2PictureBox4.TabStop = false;
-            this.guna2PictureBox4.Click += new System.EventHandler(this.guna2PictureBox4_Click);
-            // 
             // CancelticketsBTN
             // 
             this.CancelticketsBTN.Animated = true;
@@ -205,19 +179,6 @@
             this.CancelticketsBTN.Text = "Cancel Tickets";
             this.CancelticketsBTN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.CancelticketsBTN.Click += new System.EventHandler(this.CancelticketsBTN_Click);
-            // 
-            // cancellationBTN
-            // 
-            this.cancellationBTN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cancellationBTN.Image = global::testing.Properties.Resources.image_2024_05_01_135359567_removebg_preview;
-            this.cancellationBTN.ImageRotate = 0F;
-            this.cancellationBTN.Location = new System.Drawing.Point(0, 221);
-            this.cancellationBTN.Name = "cancellationBTN";
-            this.cancellationBTN.Size = new System.Drawing.Size(38, 26);
-            this.cancellationBTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.cancellationBTN.TabIndex = 19;
-            this.cancellationBTN.TabStop = false;
-            this.cancellationBTN.Click += new System.EventHandler(this.cancellationBTN_Click);
             // 
             // SearchRoutesBTN
             // 
@@ -243,19 +204,6 @@
             this.SearchRoutesBTN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.SearchRoutesBTN.Click += new System.EventHandler(this.SearchRoutesBTN_Click);
             // 
-            // searchroutesticket
-            // 
-            this.searchroutesticket.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.searchroutesticket.Image = global::testing.Properties.Resources.image_2024_05_01_133125829_removebg_preview;
-            this.searchroutesticket.ImageRotate = 0F;
-            this.searchroutesticket.Location = new System.Drawing.Point(0, 157);
-            this.searchroutesticket.Name = "searchroutesticket";
-            this.searchroutesticket.Size = new System.Drawing.Size(38, 26);
-            this.searchroutesticket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.searchroutesticket.TabIndex = 7;
-            this.searchroutesticket.TabStop = false;
-            this.searchroutesticket.Click += new System.EventHandler(this.searchroutesticket_Click);
-            // 
             // myaccountBTN
             // 
             this.myaccountBTN.Animated = true;
@@ -279,19 +227,6 @@
             this.myaccountBTN.Text = "My Account";
             this.myaccountBTN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.myaccountBTN.Click += new System.EventHandler(this.myaccountBTN_Click);
-            // 
-            // myaccountpic
-            // 
-            this.myaccountpic.Image = global::testing.Properties.Resources.whiteaccountsetting;
-            this.myaccountpic.ImageRotate = 0F;
-            this.myaccountpic.Location = new System.Drawing.Point(-31, 447);
-            this.myaccountpic.Name = "myaccountpic";
-            this.myaccountpic.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.myaccountpic.Size = new System.Drawing.Size(102, 38);
-            this.myaccountpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.myaccountpic.TabIndex = 15;
-            this.myaccountpic.TabStop = false;
-            this.myaccountpic.Click += new System.EventHandler(this.myaccountpic_Click);
             // 
             // guna2GradientTileButton1
             // 
@@ -317,18 +252,6 @@
             this.guna2GradientTileButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientTileButton1.Click += new System.EventHandler(this.guna2GradientTileButton1_Click);
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2PictureBox1.Image = global::testing.Properties.Resources.logout_removebg_preview;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 491);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(39, 26);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 13;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // ExitBTN
             // 
             this.ExitBTN.Animated = true;
@@ -349,17 +272,6 @@
             this.ExitBTN.Text = "EXIT";
             this.ExitBTN.Click += new System.EventHandler(this.ExitBTN_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::testing.Properties.Resources.uetrailwayslogo;
-            this.pictureBox1.Location = new System.Drawing.Point(-20, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 125);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // guna2CustomGradientPanel2
             // 
             this.guna2CustomGradientPanel2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
@@ -372,21 +284,6 @@
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(900, 1);
             this.guna2CustomGradientPanel2.TabIndex = 13;
-            // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2PictureBox3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox3.Image = global::testing.Properties.Resources.blue_ticket;
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(156, 8);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(54, 41);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox3.TabIndex = 12;
-            this.guna2PictureBox3.TabStop = false;
-            this.guna2PictureBox3.UseTransparentBackground = true;
             // 
             // guna2HtmlLabel2
             // 
@@ -763,12 +660,132 @@
             this.BookTicketTXT.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             this.BookTicketTXT.Click += new System.EventHandler(this.BookTicketTXT_Click);
             // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2CirclePictureBox1.Image = global::testing.Properties.Resources.image_2024_05_06_142454464_removebg_preview;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(465, 65);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(43, 26);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBox1.TabIndex = 80;
+            this.guna2CirclePictureBox1.TabStop = false;
+            this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2PictureBox3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox3.Image = global::testing.Properties.Resources.blue_ticket;
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(156, 8);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(54, 41);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox3.TabIndex = 12;
+            this.guna2PictureBox3.TabStop = false;
+            this.guna2PictureBox3.UseTransparentBackground = true;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.Image = global::testing.Properties.Resources.blue_ticket;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(122, 189);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(38, 26);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 17;
+            this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.UseTransparentBackground = true;
+            // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2PictureBox4.Image = global::testing.Properties.Resources.historywith_bg_removebg_preview;
+            this.guna2PictureBox4.ImageRotate = 0F;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(0, 253);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.Size = new System.Drawing.Size(38, 26);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox4.TabIndex = 21;
+            this.guna2PictureBox4.TabStop = false;
+            this.guna2PictureBox4.Click += new System.EventHandler(this.guna2PictureBox4_Click);
+            // 
+            // cancellationBTN
+            // 
+            this.cancellationBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cancellationBTN.Image = global::testing.Properties.Resources.image_2024_05_01_135359567_removebg_preview;
+            this.cancellationBTN.ImageRotate = 0F;
+            this.cancellationBTN.Location = new System.Drawing.Point(0, 221);
+            this.cancellationBTN.Name = "cancellationBTN";
+            this.cancellationBTN.Size = new System.Drawing.Size(38, 26);
+            this.cancellationBTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cancellationBTN.TabIndex = 19;
+            this.cancellationBTN.TabStop = false;
+            this.cancellationBTN.Click += new System.EventHandler(this.cancellationBTN_Click);
+            // 
+            // searchroutesticket
+            // 
+            this.searchroutesticket.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.searchroutesticket.Image = global::testing.Properties.Resources.image_2024_05_01_133125829_removebg_preview;
+            this.searchroutesticket.ImageRotate = 0F;
+            this.searchroutesticket.Location = new System.Drawing.Point(0, 157);
+            this.searchroutesticket.Name = "searchroutesticket";
+            this.searchroutesticket.Size = new System.Drawing.Size(38, 26);
+            this.searchroutesticket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.searchroutesticket.TabIndex = 7;
+            this.searchroutesticket.TabStop = false;
+            this.searchroutesticket.Click += new System.EventHandler(this.searchroutesticket_Click);
+            // 
+            // myaccountpic
+            // 
+            this.myaccountpic.Image = global::testing.Properties.Resources.whiteaccountsetting;
+            this.myaccountpic.ImageRotate = 0F;
+            this.myaccountpic.Location = new System.Drawing.Point(-31, 447);
+            this.myaccountpic.Name = "myaccountpic";
+            this.myaccountpic.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.myaccountpic.Size = new System.Drawing.Size(102, 38);
+            this.myaccountpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.myaccountpic.TabIndex = 15;
+            this.myaccountpic.TabStop = false;
+            this.myaccountpic.Click += new System.EventHandler(this.myaccountpic_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2PictureBox1.Image = global::testing.Properties.Resources.logout_removebg_preview;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 491);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(39, 26);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 13;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::testing.Properties.Resources.uetrailwayslogo;
+            this.pictureBox1.Location = new System.Drawing.Point(-20, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 125);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // bookTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(854, 552);
+            this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.BookTicketTXT);
             this.Controls.Add(this.guna2HtmlLabel10);
             this.Controls.Add(this.DateTXT);
@@ -802,6 +819,8 @@
             this.Text = "adminMainform";
             this.Load += new System.EventHandler(this.adminMainform_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cancellationBTN)).EndInit();
@@ -809,7 +828,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.myaccountpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -858,5 +876,6 @@
         private Guna.UI2.WinForms.Guna2TextBox DateTXT;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel8;
         private Guna.UI2.WinForms.Guna2GradientTileButton BookTicketTXT;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
     }
 }

@@ -372,5 +372,19 @@ namespace testing
             this.Close();
 
         }
+
+        private void guna2GradientTileButton3_Click(object sender, EventArgs e)
+        {
+            //open audit logs form
+            auditLog al = new auditLog();
+            al.Show();
+            this.Close();
+
+        }
+
+        private void guna2PictureBox4_Click(object sender, EventArgs e)
+        {
+            guna2GradientTileButton3_Click(sender, e);
+        }
     }
 }

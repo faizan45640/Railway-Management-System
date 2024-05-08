@@ -36,6 +36,7 @@
             this.RoutesMGRBtn = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.TrainsMgrBtn = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.ExitBTN = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.guna2GradientTileButton2 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PassengerMGRpic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.CancellationMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -43,6 +44,7 @@
             this.RoutesMGRPic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.TrainsMgrPic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PassengerMGRpic)).BeginInit();
@@ -51,11 +53,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.RoutesMGRPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TrainsMgrPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CustomGradientPanel1
             // 
             this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2GradientTileButton2);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox2);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2GradientTileButton1);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox1);
             this.guna2CustomGradientPanel1.Controls.Add(this.PassengersMGRBtn);
@@ -244,6 +249,30 @@
             this.ExitBTN.Text = "EXIT";
             this.ExitBTN.Click += new System.EventHandler(this.ExitBTN_Click);
             // 
+            // guna2GradientTileButton2
+            // 
+            this.guna2GradientTileButton2.Animated = true;
+            this.guna2GradientTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2GradientTileButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientTileButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientTileButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientTileButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientTileButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientTileButton2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientTileButton2.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientTileButton2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientTileButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientTileButton2.HoverState.FillColor = System.Drawing.Color.White;
+            this.guna2GradientTileButton2.HoverState.FillColor2 = System.Drawing.Color.White;
+            this.guna2GradientTileButton2.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.guna2GradientTileButton2.Location = new System.Drawing.Point(32, 459);
+            this.guna2GradientTileButton2.Name = "guna2GradientTileButton2";
+            this.guna2GradientTileButton2.Size = new System.Drawing.Size(148, 26);
+            this.guna2GradientTileButton2.TabIndex = 16;
+            this.guna2GradientTileButton2.Text = "Audit Logs ";
+            this.guna2GradientTileButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientTileButton2.Click += new System.EventHandler(this.guna2GradientTileButton2_Click);
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -332,6 +361,19 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.Image = global::testing.Properties.Resources.historywith_bg_removebg_preview;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(-10, 459);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(58, 26);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 15;
+            this.guna2PictureBox2.TabStop = false;
+            // 
             // adminMainform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -352,6 +394,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.RoutesMGRPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TrainsMgrPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -373,5 +416,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox RoutesMGRPic;
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
     }
 }

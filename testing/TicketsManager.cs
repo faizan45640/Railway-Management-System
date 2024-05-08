@@ -2,6 +2,7 @@
 using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
+using Guna.UI2.WinForms;
 
 namespace testing
 {
@@ -262,6 +263,20 @@ namespace testing
             //populate the datagridview
             populate();
 
+        }
+
+        private void guna2GradientTileButton3_Click(object sender, EventArgs e)
+        {
+            //opne audit logs form
+            auditLog al = new auditLog();
+            al.Show();
+            this.Close();
+
+        }
+
+        private void guna2PictureBox4_Click(object sender, EventArgs e)
+        {
+            guna2GradientTileButton3_Click(sender, e);
         }
     }
 }

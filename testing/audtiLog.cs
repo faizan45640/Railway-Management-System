@@ -1,13 +1,66 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace testing
 {
-    public partial class adminMainform : Form
+    public partial class auditLog : Form
     {
-        public adminMainform()
+        private string auditType = "";
+        public auditLog()
         {
             InitializeComponent();
+        }
+
+        private void populate()
+        {
+            if (auditType == "")
+            {
+                return;
+            }
+            //open connection
+            SqlConnection conn = new DatabaseConnection().getConnection();
+            conn.Open();
+
+            //prepare query
+            string query = "";
+            if (auditType == "Passenger")
+            {
+                query= "select * from Passenger_Audit";
+                
+            }
+            else if (auditType == "Train")
+            {
+                query= "select * from Train_Audit";
+            }
+            else if (auditType == "Route")
+            {
+                query= "select * from Route_Audit";
+            }
+            else if (auditType == "Reservation")
+            {
+                query= "select * from Reservation_Audit ";
+            }
+            else if (auditType == "Cancellation")
+            {
+                query= "select * from Cancellation_Audit";
+            }
+            else
+            {
+                return;
+            }
+            SqlCommand cmd = new SqlCommand(query, conn);
+            
+            //create Data table
+            DataSet dt = new DataSet();
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            adapter.Fill(dt);
+
+           guna2DataGridView1.DataSource = dt.Tables[0];
+            conn.Close();
+
+
         }
 
         private void adminMainform_Load(object sender, EventArgs e)
@@ -132,13 +185,45 @@ namespace testing
 
         }
 
-        private void guna2GradientTileButton2_Click(object sender, EventArgs e)
+        private void PassengerMGRBtn_Click(object sender, EventArgs e)
         {
-            //open audit log
-            auditLog al = new auditLog();
-            al.Show();
-            this.Close();
 
+        }
+
+        private void CheckLogsBTN_Click(object sender, EventArgs e)
+        {
+            if(auditlogocombobox.Text == "")
+            {
+                MessageBox.Show("Please select an audit log type");
+                return;
+            }  
+            else if(auditlogocombobox.Text == "Passengers")
+            {
+
+                auditType = "Passenger";
+                guna2HtmlLabel3.Text="Passenger Audit Logs";
+            }
+            else if (auditlogocombobox.Text == "Trains")
+            {
+                auditType = "Train";
+                guna2HtmlLabel3.Text = "Train Audit Logs";
+            }
+            else if (auditlogocombobox.Text == "Routes")
+            {
+                auditType = "Route";
+                guna2HtmlLabel3.Text = "Route Audit Logs";
+            }
+            else if (auditlogocombobox.Text == "Reservations")
+            {
+                auditType = "Reservation";
+                guna2HtmlLabel3.Text = "Reservation Audit Logs";
+            }
+            else if (auditlogocombobox.Text == "Cancellations")
+            {
+                auditType = "Cancellation";
+                guna2HtmlLabel3.Text = "Cancellation Audit Logs";
+            }   
+            populate();
         }
     }
 }

@@ -1,39 +1,27 @@
 ﻿using System;
-using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Collections.Specialized;
+using System.Windows.Forms;
 
 namespace testing
 {
-    public partial class bookTicket : Form
+    public partial class cancelTicket : Form
     {
         public int userLoggedInid = -1;
-        public bookTicket()
+        public cancelTicket()
         {
             
             InitializeComponent();
             fillrouteidcombo();
         }
 
-
-
-        public bookTicket(string id)
+        public cancelTicket(string id)
         {
-            
-            
-            
             InitializeComponent();
-            routeIDcombo.Items.Add(id);
-            routeIDcombo.SelectedIndex = 0;
-
-
+            ticketIDcombo.Items.Add(id);
+            ticketIDcombo.SelectedIndex = 0;
             
         }
-        public void fillrouteidcombo(string id)
-        {
-            
-
-        }
+       
         private void adminMainform_Load(object sender, EventArgs e)
         {
         }
@@ -177,9 +165,9 @@ namespace testing
         private void BookTicketBTN_Click(object sender, EventArgs e)
         {
             //open book tickets form
-            //bookTickets bt = new bookTickets();
-            //bt.show();
-            //this.close();
+            bookTicket bt = new bookTicket();
+            bt.Show();
+            this.Close();
 
         }
 
@@ -191,9 +179,9 @@ namespace testing
         private void CancelticketsBTN_Click(object sender, EventArgs e)
         {
             //open cancel tickets form
-            cancelTicket ct = new cancelTicket();
-            ct.Show();
-            this.Close();
+            //cancelTickets ct = new cancelTickets();
+            //ct.show();
+            //this.close();
         }
 
         private void cancellationBTN_Click(object sender, EventArgs e)
@@ -236,38 +224,41 @@ namespace testing
             this.Close();
 
         }
-
         private void fillrouteidcombo()
         {
-           //connect to database
+            //connect to database
             //fill route id combo box
-           SqlConnection conn = new DatabaseConnection().getConnection();
+            ticketIDcombo.Items.Clear();
+            SqlConnection conn = new DatabaseConnection().getConnection();
 
             conn.Open();
+            //query from reservation table in which the date is incoming and not outgoing
             
-            SqlCommand cmd = new SqlCommand("select id from Route", conn);
+            string query = "Select Reservation.id from Reservation INNER JOIN Route ON routeID=Route.id where passengerID='" + loggedinUserdetail.loggedinUserID+"' AND status='Active' AND date>"+DateTime.Now.ToString("yyyy-MM--dd");
+            SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                routeIDcombo.Items.Add(dr["id"].ToString());
+                ticketIDcombo.Items.Add(dr["id"].ToString());
             }
             conn.Close();
 
 
-            
+
 
 
 
         }
 
-        private void routeIDcombo_SelectedIndexChanged(object sender, EventArgs e)
+        private void ReservationIDManager_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //fill the textboxes with the selected route id
+            //first empty tbe box
+            
             SqlConnection conn = new DatabaseConnection().getConnection();
-            int id = int.Parse(routeIDcombo.SelectedItem.ToString());
+            int id = int.Parse(ticketIDcombo.SelectedItem.ToString());
 
 
-            string query = " SELECT Route.id as ID, trainid AS[Train ID], name AS[Train Name],  source AS Source , destination as Destination , date AS Date , cost AS Cost FROM Route INNER JOIN Train ON trainid = Train.id WHERE '" + id + "'=Route.id";
+            string query = " SELECT Route.id as ID, trainid AS[Train ID], Train.name AS[Train Name],  source AS Source , destination as Destination , date AS Date , cost AS Cost FROM Reservation INNER JOIN Route ON Route.id=routeID INNER JOIN Train ON trainid = Train.id WHERE '" + id + "'=Reservation.id AND  Reservation.status='Active'" ;
 
 
             SqlCommand cmd = new SqlCommand(query, conn);
@@ -287,62 +278,55 @@ namespace testing
             conn.Close();
         }
 
-        private void guna2HtmlLabel9_Click(object sender, EventArgs e)
+        private void DeleteReservationBTN_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void BookTicketTXT_Click(object sender, EventArgs e)
-        {
-            //book ticket
-
-            if (routeIDcombo.SelectedIndex == -1)
+            if (ticketIDcombo.Text == "")
             {
-                MessageBox.Show("Error: Please Select A Route");
-                return;
+                MessageBox.Show("Please select a reservation to delete");
             }
-
-            string i = routeIDcombo.SelectedItem.ToString();
-            
-            try
+            else
             {
+                //open connection
                 SqlConnection conn = new DatabaseConnection().getConnection();
                 conn.Open();
-                //check if the user has already booked this route
+                //insert into cancellation table
+                string timeDate = DateTime.Now.ToString("yyyy-MM-dd");
 
-                string query = "SELECT * FROM Reservation WHERE routeID = '" + routeIDcombo.SelectedItem.ToString() + "' AND passengerID = '" + loggedinUserdetail.loggedinUserID + "' AND status='Active'";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                SqlDataReader dr = cmd.ExecuteReader();
-                if (dr.Read())
+
+                string b = ticketIDcombo.SelectedItem.ToString();
+                
+                //check if reservation is already cancelled
+                string query3 = "select status from Reservation where id='" + b + "'";
+                SqlCommand cmd3 = new SqlCommand(query3, conn);
+                SqlDataReader rdr = cmd3.ExecuteReader();
+                rdr.Read();
+                if (rdr["status"].ToString() == "Cancelled")
                 {
-                    MessageBox.Show("You have already booked this route");
+                    MessageBox.Show("Reservation already cancelled");
                     return;
                 }
-
-
-
-
+                conn.Close();
+                //set status to cancelled
+                conn.Open();
+                string query1 = "update Reservation set status='Cancelled' where id='" + b + "'";
+                SqlCommand cmd = new SqlCommand(query1, conn);
+                cmd.ExecuteNonQuery();
                 conn.Close();
                 conn.Open();
-                query = "INSERT INTO Reservation (routeID, passengerID, status) VALUES ('" + routeIDcombo.SelectedItem + "','" + loggedinUserdetail.loggedinUserID + "' , 'Active')";
-                SqlCommand cmd2 = new SqlCommand(query, conn);
-                cmd2.ExecuteNonQuery();
-                MessageBox.Show("Ticket Booked Successfully");
+
+
+                string query2 = "insert into Cancellation values('" + b + "','" + timeDate + "')";
+                SqlCommand sqlCommand = new SqlCommand(query2, conn);
+                sqlCommand.ExecuteNonQuery();
+
                 conn.Close();
-            }
-            catch
-            {
-                MessageBox.Show("Error Booking Ticket");
+
+
+
+                MessageBox.Show("Reservation Deleted Successfully");
+                
             }
            
-        }
-
-        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
-        {
-            //disable clicking this button
-            
-            routeIDcombo.Items.Clear();
-            fillrouteidcombo();
         }
     }
 }

@@ -233,7 +233,7 @@ namespace testing
                 return;
             }
             Populate();
-            FilltrainID();
+          
             //connect to database
             SqlConnection conn = new DatabaseConnection().getConnection();
             //open connection
@@ -477,6 +477,20 @@ namespace testing
         private void sourcecombo_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2GradientTileButton2_Click(object sender, EventArgs e)
+        {
+            //open audit logs form
+            auditLog al = new auditLog();
+            al.Show();
+            this.Close();
+
+        }
+
+        private void guna2PictureBox4_Click(object sender, EventArgs e)
+        {
+            guna2GradientTileButton2_Click(sender, e);
         }
     }
 }
