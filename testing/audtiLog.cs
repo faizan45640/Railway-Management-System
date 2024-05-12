@@ -222,7 +222,46 @@ namespace testing
             {
                 auditType = "Cancellation";
                 guna2HtmlLabel3.Text = "Cancellation Audit Logs";
-            }   
+            }  
+            DeleteLogsBTN.Visible=true;
+            populate();
+        }
+
+        private void DeleteLogsBTN_Click(object sender, EventArgs e)
+        {
+            //delete the logs selected in the combobox
+            //connect
+            SqlConnection conn = new DatabaseConnection().getConnection();
+            conn.Open();
+            //prepare query
+            string query = "";
+            if (auditType == "Passenger")
+            {
+                query = "delete from Passenger_Audit";
+            }
+            else if (auditType == "Train")
+            {
+                query = "delete from Train_Audit";
+            }
+            else if (auditType == "Route")
+            {
+                query = "delete from Route_Audit";
+            }
+            else if (auditType == "Reservation")
+            {
+                query = "delete from Reservation_Audit ";
+            }
+            else if (auditType == "Cancellation")
+            {
+                query = "delete from Cancellation_Audit";
+            }
+            else
+            {
+                return;
+            }
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.ExecuteNonQuery();
+            conn.Close();
             populate();
         }
     }

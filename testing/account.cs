@@ -301,5 +301,41 @@ namespace testing
         {
           
         }
+
+        private void DeleteAccountBTN_Click(object sender, EventArgs e)
+        {
+            confirmDeletion.Visible = true;
+           
+
+        }
+
+        private void confirmDeletion_Click(object sender, EventArgs e)
+        {
+            //open connection
+            SqlConnection conn = new DatabaseConnection().getConnection();
+            conn.Open();
+            //prepare query
+            string query = "DELETE FROM Passenger WHERE id = " + loggedinUserdetail.loggedinUserID;
+            //prepare command
+            SqlCommand cmd = new SqlCommand(query, conn);
+
+            //execute command
+            int i = cmd.ExecuteNonQuery();
+            if (i != 0)
+            {
+
+                MessageBox.Show("Account Deleted");
+            }
+            else
+            {
+                MessageBox.Show("Account Could Not Be Deleted");
+            }
+            //close connection
+            conn.Close();
+            //open login form
+            userLogin us = new userLogin();
+            this.Close();
+            us.Show();
+        }
     }
 }

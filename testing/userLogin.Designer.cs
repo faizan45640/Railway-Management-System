@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(userLogin));
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.ExitBTN = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -44,7 +42,6 @@
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.signUpherebutton = new Guna.UI2.WinForms.Guna2TileButton();
             this.Loginasadmincheckox = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +52,6 @@
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2CustomGradientPanel1.Controls.Add(this.pictureBox1);
             this.guna2CustomGradientPanel1.Controls.Add(this.label1);
-            this.guna2Transition1.SetDecoration(this.guna2CustomGradientPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(174)))), ((int)(((byte)(222)))));
@@ -71,7 +67,6 @@
             this.ExitBTN.Animated = true;
             this.ExitBTN.AutoRoundedCorners = true;
             this.ExitBTN.BorderRadius = 14;
-            this.guna2Transition1.SetDecoration(this.ExitBTN, Guna.UI2.AnimatorNS.DecorationType.None);
             this.ExitBTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.ExitBTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.ExitBTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -92,7 +87,6 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(50, 244);
@@ -104,7 +98,6 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.pictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pictureBox1.Image = global::testing.Properties.Resources.image_2024_05_03_190726920_removebg_preview;
             this.pictureBox1.Location = new System.Drawing.Point(50, 15);
             this.pictureBox1.Name = "pictureBox1";
@@ -118,7 +111,6 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.label1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(44, 174);
@@ -130,7 +122,6 @@
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(174)))), ((int)(((byte)(222)))));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(336, 34);
@@ -144,7 +135,6 @@
             // 
             this.guna2CustomGradientPanel2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.guna2CustomGradientPanel2.CustomizableEdges.BottomLeft = false;
-            this.guna2Transition1.SetDecoration(this.guna2CustomGradientPanel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2CustomGradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
             this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
             this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(174)))), ((int)(((byte)(222)))));
@@ -158,7 +148,6 @@
             // 
             this.guna2CustomGradientPanel3.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.guna2CustomGradientPanel3.CustomizableEdges.BottomLeft = false;
-            this.guna2Transition1.SetDecoration(this.guna2CustomGradientPanel3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2CustomGradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
             this.guna2CustomGradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
             this.guna2CustomGradientPanel3.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(174)))), ((int)(((byte)(222)))));
@@ -172,7 +161,6 @@
             // 
             this.UsernameTXT.BorderThickness = 0;
             this.UsernameTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2Transition1.SetDecoration(this.UsernameTXT, Guna.UI2.AnimatorNS.DecorationType.None);
             this.UsernameTXT.DefaultText = "";
             this.UsernameTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.UsernameTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -195,7 +183,6 @@
             // 
             this.PasswordTXT.BorderThickness = 0;
             this.PasswordTXT.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2Transition1.SetDecoration(this.PasswordTXT, Guna.UI2.AnimatorNS.DecorationType.None);
             this.PasswordTXT.DefaultText = "";
             this.PasswordTXT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.PasswordTXT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -220,7 +207,6 @@
             this.Loginbtn.AutoRoundedCorners = true;
             this.Loginbtn.BorderRadius = 15;
             this.Loginbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Transition1.SetDecoration(this.Loginbtn, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Loginbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Loginbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Loginbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -246,7 +232,6 @@
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Black;
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(375, 270);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
@@ -258,7 +243,6 @@
             // 
             this.signUpherebutton.Animated = true;
             this.signUpherebutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Transition1.SetDecoration(this.signUpherebutton, Guna.UI2.AnimatorNS.DecorationType.None);
             this.signUpherebutton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.signUpherebutton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.signUpherebutton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -281,7 +265,6 @@
             this.Loginasadmincheckox.CheckedState.BorderRadius = 0;
             this.Loginasadmincheckox.CheckedState.BorderThickness = 0;
             this.Loginasadmincheckox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2Transition1.SetDecoration(this.Loginasadmincheckox, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Loginasadmincheckox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold);
             this.Loginasadmincheckox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(174)))), ((int)(((byte)(222)))));
             this.Loginasadmincheckox.Location = new System.Drawing.Point(336, 181);
@@ -294,28 +277,6 @@
             this.Loginasadmincheckox.UncheckedState.BorderThickness = 1;
             this.Loginasadmincheckox.UncheckedState.FillColor = System.Drawing.Color.White;
             this.Loginasadmincheckox.UseVisualStyleBackColor = false;
-            // 
-            // guna2Transition1
-            // 
-            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
-            this.guna2Transition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation1;
-            this.guna2Transition1.Interval = 20;
             // 
             // userLogin
             // 
@@ -333,7 +294,6 @@
             this.Controls.Add(this.guna2CustomGradientPanel2);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.guna2CustomGradientPanel1);
-            this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "userLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -363,6 +323,5 @@
         private Guna.UI2.WinForms.Guna2TileButton signUpherebutton;
         private Guna.UI2.WinForms.Guna2GradientTileButton ExitBTN;
         private Guna.UI2.WinForms.Guna2CheckBox Loginasadmincheckox;
-        private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
     }
 }

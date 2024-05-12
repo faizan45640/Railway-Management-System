@@ -29,13 +29,20 @@
         private void InitializeComponent()
         {
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.TrainsMgrPic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientTileButton3 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.TrainsMgrBtn = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.CancelticketsBTN = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.cancellationBTN = new Guna.UI2.WinForms.Guna2PictureBox();
             this.BookTicketBTN = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.bookticketpic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.SearchRoutesBTN = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.searchroutesticket = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientTileButton1 = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ExitBTN = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PassengerPhoneTXT = new Guna.UI2.WinForms.Guna2TextBox();
@@ -54,15 +61,8 @@
             this.PassengerNaeTX = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.TrainsMgrPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.cancellationBTN = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.bookticketpic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.searchroutesticket = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.confirmDeletion = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2CustomGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TrainsMgrPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cancellationBTN)).BeginInit();
@@ -70,6 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.searchroutesticket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CustomGradientPanel1
@@ -98,6 +99,21 @@
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(163, 557);
             this.guna2CustomGradientPanel1.TabIndex = 1;
             this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
+            // 
+            // TrainsMgrPic
+            // 
+            this.TrainsMgrPic.BackColor = System.Drawing.Color.Transparent;
+            this.TrainsMgrPic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TrainsMgrPic.FillColor = System.Drawing.Color.Transparent;
+            this.TrainsMgrPic.Image = global::testing.Properties.Resources.blueaccountsettings;
+            this.TrainsMgrPic.ImageRotate = 0F;
+            this.TrainsMgrPic.Location = new System.Drawing.Point(125, 459);
+            this.TrainsMgrPic.Name = "TrainsMgrPic";
+            this.TrainsMgrPic.Size = new System.Drawing.Size(38, 26);
+            this.TrainsMgrPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.TrainsMgrPic.TabIndex = 7;
+            this.TrainsMgrPic.TabStop = false;
+            this.TrainsMgrPic.UseTransparentBackground = true;
             // 
             // guna2GradientTileButton3
             // 
@@ -147,6 +163,19 @@
             this.TrainsMgrBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TrainsMgrBtn.Click += new System.EventHandler(this.TrainsMgrBtn_Click_1);
             // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2PictureBox4.Image = global::testing.Properties.Resources.historywith_bg_removebg_preview;
+            this.guna2PictureBox4.ImageRotate = 0F;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(0, 253);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.Size = new System.Drawing.Size(38, 26);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox4.TabIndex = 21;
+            this.guna2PictureBox4.TabStop = false;
+            this.guna2PictureBox4.Click += new System.EventHandler(this.guna2PictureBox4_Click);
+            // 
             // CancelticketsBTN
             // 
             this.CancelticketsBTN.Animated = true;
@@ -170,6 +199,19 @@
             this.CancelticketsBTN.Text = "Cancel Tickets";
             this.CancelticketsBTN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.CancelticketsBTN.Click += new System.EventHandler(this.CancelticketsBTN_Click);
+            // 
+            // cancellationBTN
+            // 
+            this.cancellationBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cancellationBTN.Image = global::testing.Properties.Resources.image_2024_05_01_135359567_removebg_preview;
+            this.cancellationBTN.ImageRotate = 0F;
+            this.cancellationBTN.Location = new System.Drawing.Point(0, 221);
+            this.cancellationBTN.Name = "cancellationBTN";
+            this.cancellationBTN.Size = new System.Drawing.Size(38, 26);
+            this.cancellationBTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cancellationBTN.TabIndex = 19;
+            this.cancellationBTN.TabStop = false;
+            this.cancellationBTN.Click += new System.EventHandler(this.cancellationBTN_Click);
             // 
             // BookTicketBTN
             // 
@@ -195,6 +237,19 @@
             this.BookTicketBTN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BookTicketBTN.Click += new System.EventHandler(this.BookTicketBTN_Click);
             // 
+            // bookticketpic
+            // 
+            this.bookticketpic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bookticketpic.Image = global::testing.Properties.Resources.image_2024_05_01_134354312_removebg_preview;
+            this.bookticketpic.ImageRotate = 0F;
+            this.bookticketpic.Location = new System.Drawing.Point(0, 189);
+            this.bookticketpic.Name = "bookticketpic";
+            this.bookticketpic.Size = new System.Drawing.Size(38, 26);
+            this.bookticketpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bookticketpic.TabIndex = 17;
+            this.bookticketpic.TabStop = false;
+            this.bookticketpic.Click += new System.EventHandler(this.bookticketpic_Click);
+            // 
             // SearchRoutesBTN
             // 
             this.SearchRoutesBTN.Animated = true;
@@ -218,6 +273,19 @@
             this.SearchRoutesBTN.Text = "Search Routes";
             this.SearchRoutesBTN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.SearchRoutesBTN.Click += new System.EventHandler(this.SearchRoutesBTN_Click);
+            // 
+            // searchroutesticket
+            // 
+            this.searchroutesticket.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.searchroutesticket.Image = global::testing.Properties.Resources.image_2024_05_01_133125829_removebg_preview;
+            this.searchroutesticket.ImageRotate = 0F;
+            this.searchroutesticket.Location = new System.Drawing.Point(0, 157);
+            this.searchroutesticket.Name = "searchroutesticket";
+            this.searchroutesticket.Size = new System.Drawing.Size(38, 26);
+            this.searchroutesticket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.searchroutesticket.TabIndex = 7;
+            this.searchroutesticket.TabStop = false;
+            this.searchroutesticket.Click += new System.EventHandler(this.searchroutesticket_Click);
             // 
             // guna2GradientTileButton1
             // 
@@ -243,6 +311,18 @@
             this.guna2GradientTileButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientTileButton1.Click += new System.EventHandler(this.guna2GradientTileButton1_Click);
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2PictureBox1.Image = global::testing.Properties.Resources.logout_removebg_preview;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 491);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(39, 26);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 13;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // ExitBTN
             // 
             this.ExitBTN.Animated = true;
@@ -262,6 +342,17 @@
             this.ExitBTN.TabIndex = 4;
             this.ExitBTN.Text = "EXIT";
             this.ExitBTN.Click += new System.EventHandler(this.ExitBTN_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::testing.Properties.Resources.uetrailwayslogo;
+            this.pictureBox1.Location = new System.Drawing.Point(-20, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 125);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // guna2CustomGradientPanel2
             // 
@@ -418,6 +509,7 @@
             this.DeleteAccountBTN.Text = "Delete Account";
             this.DeleteAccountBTN.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.DeleteAccountBTN.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            this.DeleteAccountBTN.Click += new System.EventHandler(this.DeleteAccountBTN_Click);
             // 
             // UpdateAccountBTN
             // 
@@ -583,95 +675,34 @@
             this.guna2PictureBox3.TabStop = false;
             this.guna2PictureBox3.UseTransparentBackground = true;
             // 
-            // TrainsMgrPic
+            // confirmDeletion
             // 
-            this.TrainsMgrPic.BackColor = System.Drawing.Color.Transparent;
-            this.TrainsMgrPic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TrainsMgrPic.FillColor = System.Drawing.Color.Transparent;
-            this.TrainsMgrPic.Image = global::testing.Properties.Resources.blueaccountsettings;
-            this.TrainsMgrPic.ImageRotate = 0F;
-            this.TrainsMgrPic.Location = new System.Drawing.Point(125, 459);
-            this.TrainsMgrPic.Name = "TrainsMgrPic";
-            this.TrainsMgrPic.Size = new System.Drawing.Size(38, 26);
-            this.TrainsMgrPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.TrainsMgrPic.TabIndex = 7;
-            this.TrainsMgrPic.TabStop = false;
-            this.TrainsMgrPic.UseTransparentBackground = true;
-            // 
-            // guna2PictureBox4
-            // 
-            this.guna2PictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2PictureBox4.Image = global::testing.Properties.Resources.historywith_bg_removebg_preview;
-            this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(0, 253);
-            this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(38, 26);
-            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox4.TabIndex = 21;
-            this.guna2PictureBox4.TabStop = false;
-            this.guna2PictureBox4.Click += new System.EventHandler(this.guna2PictureBox4_Click);
-            // 
-            // cancellationBTN
-            // 
-            this.cancellationBTN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cancellationBTN.Image = global::testing.Properties.Resources.image_2024_05_01_135359567_removebg_preview;
-            this.cancellationBTN.ImageRotate = 0F;
-            this.cancellationBTN.Location = new System.Drawing.Point(0, 221);
-            this.cancellationBTN.Name = "cancellationBTN";
-            this.cancellationBTN.Size = new System.Drawing.Size(38, 26);
-            this.cancellationBTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.cancellationBTN.TabIndex = 19;
-            this.cancellationBTN.TabStop = false;
-            this.cancellationBTN.Click += new System.EventHandler(this.cancellationBTN_Click);
-            // 
-            // bookticketpic
-            // 
-            this.bookticketpic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bookticketpic.Image = global::testing.Properties.Resources.image_2024_05_01_134354312_removebg_preview;
-            this.bookticketpic.ImageRotate = 0F;
-            this.bookticketpic.Location = new System.Drawing.Point(0, 189);
-            this.bookticketpic.Name = "bookticketpic";
-            this.bookticketpic.Size = new System.Drawing.Size(38, 26);
-            this.bookticketpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bookticketpic.TabIndex = 17;
-            this.bookticketpic.TabStop = false;
-            this.bookticketpic.Click += new System.EventHandler(this.bookticketpic_Click);
-            // 
-            // searchroutesticket
-            // 
-            this.searchroutesticket.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.searchroutesticket.Image = global::testing.Properties.Resources.image_2024_05_01_133125829_removebg_preview;
-            this.searchroutesticket.ImageRotate = 0F;
-            this.searchroutesticket.Location = new System.Drawing.Point(0, 157);
-            this.searchroutesticket.Name = "searchroutesticket";
-            this.searchroutesticket.Size = new System.Drawing.Size(38, 26);
-            this.searchroutesticket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.searchroutesticket.TabIndex = 7;
-            this.searchroutesticket.TabStop = false;
-            this.searchroutesticket.Click += new System.EventHandler(this.searchroutesticket_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2PictureBox1.Image = global::testing.Properties.Resources.logout_removebg_preview;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 491);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(39, 26);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 13;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::testing.Properties.Resources.uetrailwayslogo;
-            this.pictureBox1.Location = new System.Drawing.Point(-20, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 125);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.confirmDeletion.Animated = true;
+            this.confirmDeletion.AutoRoundedCorners = true;
+            this.confirmDeletion.BorderRadius = 15;
+            this.confirmDeletion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.confirmDeletion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.confirmDeletion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.confirmDeletion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.confirmDeletion.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.confirmDeletion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.confirmDeletion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
+            this.confirmDeletion.FillColor2 = System.Drawing.Color.IndianRed;
+            this.confirmDeletion.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.confirmDeletion.ForeColor = System.Drawing.Color.White;
+            this.confirmDeletion.Location = new System.Drawing.Point(583, 310);
+            this.confirmDeletion.Name = "confirmDeletion";
+            this.confirmDeletion.ShadowDecoration.CustomizableEdges.BottomLeft = false;
+            this.confirmDeletion.ShadowDecoration.CustomizableEdges.BottomRight = false;
+            this.confirmDeletion.ShadowDecoration.CustomizableEdges.TopLeft = false;
+            this.confirmDeletion.ShadowDecoration.CustomizableEdges.TopRight = false;
+            this.confirmDeletion.Size = new System.Drawing.Size(203, 32);
+            this.confirmDeletion.TabIndex = 73;
+            this.confirmDeletion.Text = "CONFIRM TO DELETE";
+            this.confirmDeletion.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.confirmDeletion.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            this.confirmDeletion.Visible = false;
+            this.confirmDeletion.Click += new System.EventHandler(this.confirmDeletion_Click);
             // 
             // account
             // 
@@ -679,6 +710,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(854, 552);
+            this.Controls.Add(this.confirmDeletion);
             this.Controls.Add(this.PassengerPhoneTXT);
             this.Controls.Add(this.guna2CustomGradientPanel7);
             this.Controls.Add(this.PassengerAddressTxt);
@@ -704,7 +736,6 @@
             this.Text = "adminMainform";
             this.Load += new System.EventHandler(this.adminMainform_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TrainsMgrPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cancellationBTN)).EndInit();
@@ -712,6 +743,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.searchroutesticket)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -752,5 +784,6 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel4;
         private Guna.UI2.WinForms.Guna2TextBox PassengerNaeTX;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel3;
+        private Guna.UI2.WinForms.Guna2GradientTileButton confirmDeletion;
     }
 }

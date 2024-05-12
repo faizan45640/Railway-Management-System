@@ -260,7 +260,7 @@ namespace testing
                 MessageBox.Show("Source and Destination cannot be same");
                 return;
             }
-           //check if the train is even available on that date
+          
 
             
             if(!Int32.TryParse(a, out cost))
@@ -285,6 +285,7 @@ namespace testing
                 MessageBox.Show("Train is already occupied on that date");
                 return;
             }
+          
             reader.Close();
             conn.Close();
             //open connection
@@ -305,7 +306,7 @@ namespace testing
 
 
 
-
+            
 
 
         }
@@ -491,6 +492,11 @@ namespace testing
         private void guna2PictureBox4_Click(object sender, EventArgs e)
         {
             guna2GradientTileButton2_Click(sender, e);
+        }
+
+        private void TrainIDcombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

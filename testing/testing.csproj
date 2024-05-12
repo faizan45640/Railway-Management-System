@@ -403,5 +403,20 @@
   <ItemGroup>
     <None Include="Resources\history blue.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seepasswwordblue-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueeye-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluehome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluehome-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

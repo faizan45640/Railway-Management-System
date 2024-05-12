@@ -1,14 +1,19 @@
-﻿using Microsoft.SqlServer.Server;
+﻿using Guna.UI2.WinForms;
+using Microsoft.SqlServer.Server;
 using System;
 using System.Data.SqlClient;
 using System.Diagnostics.Eventing.Reader;
 using System.Windows.Forms;
+using System.Drawing;
+
 
 
 namespace testing
 {
+
     public partial class userLogin : Form
     {
+        private bool isPaswordVisible = false;
         public userLogin()
         {
             InitializeComponent();
@@ -51,7 +56,6 @@ namespace testing
             //string connectionString = "Data Source=DESKTOP-MDFVLLC\\SQLEXPRESS;Initial Catalog=RailwayMS;Integrated Security=True;Encrypt=False";
 
 
-
             //Establish Connection
             SqlConnection conn = new DatabaseConnection().getConnection();
             //open connection
@@ -79,7 +83,7 @@ namespace testing
 
             }
 
-
+           
             //prepare command
             SqlCommand cmd = new SqlCommand(query, conn);
             //execute command
@@ -99,6 +103,8 @@ namespace testing
                 else
                 {
                     MessageBox.Show("Invalid Email or password");
+                    guna2CustomGradientPanel2.FillColor = Color.Red;
+                    guna2CustomGradientPanel3.FillColor = Color.Red;
                     UsernameTXT.Clear();
                     PasswordTXT.Clear();
                     return;
@@ -128,6 +134,8 @@ namespace testing
             else
             {
                 MessageBox.Show("Invalid Username or Password");
+                guna2CustomGradientPanel2.FillColor = Color.Red;
+                guna2CustomGradientPanel3.FillColor = Color.Red;
                 UsernameTXT.Clear();
                 PasswordTXT.Clear();
                 UsernameTXT.Focus();
@@ -145,5 +153,8 @@ namespace testing
         {
 
         }
+
+        
+
     }
 }

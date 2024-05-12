@@ -2,6 +2,8 @@
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Collections.Specialized;
+using System.Globalization;
+using System.Data.SqlTypes;
 
 namespace testing
 {
@@ -35,7 +37,7 @@ namespace testing
 
         }
         private void adminMainform_Load(object sender, EventArgs e)
-        {
+        {   
         }
 
         private void ExitBTN_Click(object sender, EventArgs e)
@@ -273,14 +275,24 @@ namespace testing
             SqlCommand cmd = new SqlCommand(query, conn);
             conn.Open();
             SqlDataReader dr = cmd.ExecuteReader();
+         
+
+
             while (dr.Read())
             {
                 TrainIDTXT.Text = dr["Train ID"].ToString();
                 TrainNameTXT.Text = dr["Train Name"].ToString();
                 SourceTXTBox.Text = dr["Source"].ToString();
                 DestinationTXT.Text = dr["Destination"].ToString();
-                DateTXT.Text = dr["Date"].ToString();
+               
                 CostTXT.Text = dr["Cost"].ToString();
+               string d1 = dr["Date"].ToString();
+                DateTime s = DateTime.Parse(d1);
+                string datestring= s.ToString("dd/MM/yyyy");
+                DateTXT.Text = datestring;
+
+               
+
             }
 
 

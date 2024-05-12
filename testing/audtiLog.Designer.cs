@@ -56,6 +56,7 @@
             this.auditlogocombobox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.DeleteLogsBTN = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -557,12 +558,42 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // DeleteLogsBTN
+            // 
+            this.DeleteLogsBTN.Animated = true;
+            this.DeleteLogsBTN.AutoRoundedCorners = true;
+            this.DeleteLogsBTN.BorderRadius = 15;
+            this.DeleteLogsBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DeleteLogsBTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.DeleteLogsBTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.DeleteLogsBTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.DeleteLogsBTN.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.DeleteLogsBTN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.DeleteLogsBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
+            this.DeleteLogsBTN.FillColor2 = System.Drawing.Color.IndianRed;
+            this.DeleteLogsBTN.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DeleteLogsBTN.ForeColor = System.Drawing.Color.White;
+            this.DeleteLogsBTN.Location = new System.Drawing.Point(392, 142);
+            this.DeleteLogsBTN.Name = "DeleteLogsBTN";
+            this.DeleteLogsBTN.ShadowDecoration.CustomizableEdges.BottomLeft = false;
+            this.DeleteLogsBTN.ShadowDecoration.CustomizableEdges.BottomRight = false;
+            this.DeleteLogsBTN.ShadowDecoration.CustomizableEdges.TopLeft = false;
+            this.DeleteLogsBTN.ShadowDecoration.CustomizableEdges.TopRight = false;
+            this.DeleteLogsBTN.Size = new System.Drawing.Size(203, 32);
+            this.DeleteLogsBTN.TabIndex = 62;
+            this.DeleteLogsBTN.Text = "DELETE LOGS";
+            this.DeleteLogsBTN.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.DeleteLogsBTN.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            this.DeleteLogsBTN.Visible = false;
+            this.DeleteLogsBTN.Click += new System.EventHandler(this.DeleteLogsBTN_Click);
+            // 
             // auditLog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(854, 552);
+            this.Controls.Add(this.DeleteLogsBTN);
             this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.CheckLogsBTN);
@@ -620,5 +651,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox auditlogocombobox;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2GradientTileButton DeleteLogsBTN;
     }
 }
